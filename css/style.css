@@ -951,7 +951,7 @@ border-radius: 0px 160px 0px 0px;
 	height: 100vh; 
 	min-height: 1046px;
 	position: absolute; 
-	z-index: 0; 
+	z-index: 10; 
 	
 }
 
