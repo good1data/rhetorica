@@ -1,5 +1,106 @@
 // JavaScript Document
 window.onload = function() {
+	
+		// переменные
+		let rightMenu = document.querySelector('#rightMenu'); // выбрали контейнер меню
+
+
+
+	/*
+
+		let menuPointCollection = document.querySelectorAll('.menuPoint'); // выбрали все пункты меню
+		let arrMenuPointCollection = Array.from(menuPointCollection); // сформировали пуктов меню в массив
+		
+		let menuLineCollection = document.querySelectorAll('.menuLine');  // выбрали все линии меню
+		let arrMenuLineCollection = Array.from(menuLineCollection); // сформировали все линии меню в массив
+		
+		let menuPointSelected; // переменная для хранения пункта меню на который навели мышку
+		let menuText = document.querySelector('.menuText'); // выбрали всплывающую подсказку в меню
+		let upLine; // переменная для хранения линии выше выбранного пункта меню
+		let downLine; // переменная для хранения линии ниже выбранного пункта меню
+		
+		let sectionPage = document.getElementById('advantagesScreen');
+	*/
+	
+	
+		// наведение на пункт меню
+		rightMenu.addEventListener("mouseover", function(event) { //срабатывает при наведении на пункт меню
+			
+			
+			let selectPoint = event.target;
+			let selectPointClass = selectPoint.classList;
+			console.log(selectPointClass);
+
+		});
+			/*
+			let menuIndex = arrMenuPointCollection.indexOf(event.target);
+			let menuIndexParent = arrMenuPointCollection.indexOf(event.target.parentElement);
+			let menuClassName = event.target.className;
+		
+			let upLineIndex = menuIndexParent;
+			let downLineIndex = upLineIndex + 1;
+		
+			upLine = arrMenuLineCollection[upLineIndex];
+			downLine = arrMenuLineCollection[downLineIndex];
+		
+		
+			if(menuClassName == 'menuPoint__inside'){
+				arrMenuPointCollection[menuIndexParent].classList.add('menuPointMove');
+				menuPointSelected = menuIndexParent;
+				upLine.classList.add('moveLine');
+				downLine.classList.add('moveLine');
+				let coordsMenuPoint =  arrMenuPointCollection[menuIndexParent].getBoundingClientRect();
+				menuText.style.top = (coordsMenuPoint.y - 12) + 'px';
+				let menuContent = event.target.dataset.namemenu;
+				menuText.textContent = menuContent;
+				menuText.classList.add('menuTextMove'); 
+			
+				}*/
+		 // конец наведение на пункт меню
+			
+		 /*!!!!!!!!!!!!!!!!!!!!!!!!1
+		// mouseout на пункт меню	
+		rightMenu.addEventListener("mouseout", function() { 
+			let menuClassName = event.target.className;
+			if(menuClassName == 'menuPoint__inside'){
+				arrMenuPointCollection[menuPointSelected].classList.remove('menuPointMove');
+				upLine.classList.remove('moveLine');
+				downLine.classList.remove('moveLine');
+				menuText.classList.remove('menuTextMove');
+				}
+			}); // конец mouseout на пункт меню	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//МЕНЮ БУСИНЫ
 	//window.scrollTo(0, 0);  перематываем сайт на вверх для захвата координат экранов 
 	//АВТОМАТИЧЕСКАЯ ПРОКРУТКА ПО ЭКРАНАМ 2
@@ -20,7 +121,7 @@ window.onload = function() {
 	
 	
 	
-	*/
+	
 	let scrollStatus = true;
 	let menuStatusDel = false;
 	let answerMenuNameForDel;
@@ -285,7 +386,7 @@ window.onload = function() {
     arr.forEach(i => {
         observer.observe(i)
     })
-	*/
+	
 	
 	
 	//ЗАПОМИНАЕМ КООРДИНАТЫ МЕНЮ
@@ -385,7 +486,7 @@ window.onload = function() {
 
 
 		
-	}); */// конец клик на пункт меню
+	}); // конец клик на пункт меню
 	
 	// наведение на пункт меню
 	rightMenu.addEventListener("mouseover", function(event) {
@@ -425,7 +526,7 @@ window.onload = function() {
 			menuText.classList.remove('menuTextMove');
 			}
 		}); // конец mouseout на пункт меню	   
-
+*/
 }; // конец window.onload
 
 

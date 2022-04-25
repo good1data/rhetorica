@@ -639,7 +639,7 @@ body {
 	transition-timing-function: ease-out;
 }
 
-
+/*
 .menuPoint:hover .menuPoint__inside{
 	width: 8px; 
 	height: 8px; 
@@ -647,7 +647,7 @@ body {
 	border-radius: 100px;
 	opacity: 100%;
 	
-}
+}*/
 
 /*
 .menuPoint_active{
