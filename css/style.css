@@ -78,6 +78,7 @@ body {
 	height: 100vh; 
 	width: 108px; 
 	border-right: 0.5px solid #AAAAAA;
+	cursor: pointer;
 }
 
 .menu-right {
@@ -202,6 +203,14 @@ body {
     text-decoration: none;
 }
 
+.header__tel__number:hover {
+    color: #FF9142;
+}
+
+.header__tel__number:active {
+    color: #FF4D00;
+}
+
 .header-logo {
     display: flex;
     align-items: center;
@@ -308,6 +317,7 @@ body {
     width: 33px;
     height: 33px;
 	transition: background .3s ease, color 0.2s linear;
+	cursor: pointer;
 }
 
 .product-btn__ellips2:focus {
@@ -393,6 +403,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     width: 316px;
+	cursor: pointer
 }
 
 .product-button:focus {
@@ -1031,6 +1042,7 @@ height: 319px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 
 .buyButton:focus {
@@ -1067,6 +1079,7 @@ height: 68px;
 	font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+	cursor: pointer;
 }
 
 .nextButton:focus {
@@ -1268,6 +1281,7 @@ line-height: 20px;
 	font-style: normal;
 	font-weight: 400;
     font-size: 24px;
+	cursor: pointer;
 }
 
 .input-number__button:hover{
@@ -1336,7 +1350,14 @@ line-height: 20px;
 	    outline: none;
 	    background-color: transparent;
 	margin-bottom: 24px;
-	color:#D0D0D0
+	color:#D0D0D0;
+	caret-color: #FF9142;
+}
+
+.dataEntryCardSection__input:focus{
+
+	border-bottom: 1px solid #FF9142;
+
 }
 
 .dataEntryCardSection__input::placeholder{
@@ -1456,6 +1477,7 @@ height: 14px;
 	border: none;
 	outline: none;
 	margin-right: 16px;
+	cursor: pointer;
 }
 
 .legalConsent__text{
@@ -1474,7 +1496,7 @@ height: 14px;
     font-weight: 400;
     font-size: 12px;
 	text-decoration: underline;
-    
+    cursor: pointer;
 }
 
 .legalConsent__link:hover{
