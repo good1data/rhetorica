@@ -193,6 +193,16 @@ body {
     margin-right: 16px;
 }
 
+.header__info {
+    font-size: 18px;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 .header__tel__number {
     font-size: 18px;
 	font-family: 'Montserrat';
