@@ -1778,3 +1778,181 @@ height: 14px;
 	font-size: 'Montserrat';
 	color: #BEBEBE;
 }
+
+
+/* WIN */
+
+.shell_win {
+    background-image: url(../img/noise.png), url(../img/shell.svg);
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-blend-mode: overlay;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	height: 100vh;
+	min-height: 1046px;
+	justify-content: space-between;
+}
+
+.header_win {
+    border-bottom: 0.5px solid #AAAAAA;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.end {
+	padding-top: 100px;
+}
+
+.end-header {
+	margin-bottom: 40px;
+	margin-left: 180px;
+	font-size: 48px;
+	line-height: 49px;
+	color: #FFFFFF;
+	font-family: 'Montserrat';
+}
+
+.end-area {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.end-info {
+	padding: 40px 155px 40px 40px;
+	
+	background-color: #323232;
+	background-image: url(../img/background_end.png);
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	width: 792px;
+}
+
+.end-info__text {
+	
+	font-family: 'Montserrat';
+	font-size: 14px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+
+.end-info-chapter {
+    margin-bottom: 32px;
+    display: flex;
+    border-bottom: 1px solid #565656;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.end-info-img {
+	margin-right: 24px;
+	width: 34px;
+	height: 34px;
+}
+
+.end-info__strong {
+	margin-bottom: 24px;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+}
+
+.end-info-buy {
+	display: flex;
+	flex-direction: row;
+}
+
+.end-info__delivery {
+	display: flex;
+	flex-direction: column;
+}
+
+.end-info__deliverytext {
+	margin-bottom: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	font-size: 'Montserrat';
+	width: 229px;
+	color: #FFFFFF;
+}
+
+.end-info__deliveryprice {
+	font-size: 14px;
+	line-height: 24px;
+	font-size: 'Montserrat';
+	color: #FFFFFF;
+}
+
+.end-info__adress {
+	display: flex;
+	flex-direction: column;
+}
+
+.end-info__adresshouse {
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 20px;
+	font-size: 'Montserrat';
+	width: 256px;
+	color: #FFFFFF;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.end-info__adresstotal {
+	font-size: 16px;
+	line-height: 20px;
+	font-size: 'Montserrat';
+	color: #FFFFFF;
+}
+
+.end-question {
+	padding: 40px 40px 40px 40px;
+	background-color: #323232;
+	background-image: url(../img/background-end2.png);
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	width: 552px;
+	height: 174px;
+}
+
+.end-question-text {
+	margin-bottom: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	font-size: 'Montserrat';
+	width: 472px;
+	color: #FFFFFF;
+}
+
+.end-question-info {
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+.end-question-info__img {
+	margin-right: 17px;
+	width: 20px;
+	height: 20px;
+}
+
+.end-question-info__tel {
+	font-size: 18px;
+	line-height: 22px;
+	font-size: 'Montserrat';
+	color: #FFFFFF;
+}
+
+
+.footer{
+	width: 100%;
+}
