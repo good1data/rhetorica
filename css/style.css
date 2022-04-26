@@ -1336,8 +1336,10 @@ line-height: 20px;
 	    outline: none;
 	    background-color: transparent;
 	margin-bottom: 24px;
+	color:#D0D0D0
 
 }
+
 .dataEntryCardSection__input::placeholder{
 		color: #BEBEBE;;
 		font-family: 'Montserrat';
