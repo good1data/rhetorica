@@ -782,7 +782,7 @@ body {
     width: 596px;
 }
 	
-}
+
 
 
 .infoCard_gird{
@@ -1652,3 +1652,116 @@ height: 14px;
 	border-width: 0;
 	outline-width: 0;
   }
+
+  
+.footer-block {
+	padding-top: 40px;
+	border-top: 1px solid #C5C5C5;
+	height: 251px;
+}
+
+.footer-inforegion {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.footer-logo {
+	width: 139xp;
+	height: 109px;
+}
+
+.footer-payment {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-text {
+	margin-bottom: 16px;
+	font-size: 14px;
+	line-height: 24px;
+	font-size: 'Montserrat';
+	color: #BEBEBE;
+}
+
+.footer-bank {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 275px;
+	height: 156px;
+	gap: 18px;
+}
+
+.footer-bank__img {
+	gap: 18px;
+}
+
+.footer-adress {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-contact {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer-mobile {
+	margin-right: 16px;
+	width: 20px;
+	height: 20px;
+}
+
+.footer-tel {
+	margin-bottom: 16px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 22px;
+	font-size: 'Montserrat';
+	color: #BEBEBE;
+}
+
+.footer-network {
+	font-display: flex;
+	flex-direction: row;
+}
+
+.footer-vk {
+	width: 28px;
+	height: 28px;
+}
+
+.footer-youtube {
+	width: 28px;
+	height: 28px;
+}
+
+.footer-data {
+	padding: 34px;
+	border-top: 1px solid #C5C5C5;
+}
+
+.footer-data__law {
+	font-size: 12px;
+	line-height: 15px;
+	font-size: 'Montserrat';
+	color: #BEBEBE;
+}
+
+.footer-infodata {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footer-data__politics {
+	border-bottom: 1px solid #777777;
+	font-size: 12px;
+	line-height: 15px;
+	font-size: 'Montserrat';
+	color: #BEBEBE;
+}
