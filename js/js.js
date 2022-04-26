@@ -1,14 +1,26 @@
+
 // JavaScript Document
 window.onload = function() {
 
-
+	mainBuyButton = document.getElementById('mainBuyButton');
+	console.log(mainBuyButton);
+		
+	
 	document.addEventListener('mousewheel', function(event) {
 		// останавливаем поведение по умолчанию, то есть прокрутку
 		console.log(event);
 		
 		
 	  });
+	  mainBuyButton.addEventListener("click", function(event){ // событие при клике на пункт меню
+		function stopPageScroll(){
+			scrollPageStatus = true;
+		}
 
+		scrollPageStatus = false;
+		setTimeout(stopPageScroll, 1000);
+
+	});
 
 
 
@@ -30,32 +42,6 @@ window.onload = function() {
 
 		console.log(arrPointsMenu);
 
-
-		mainBuyButton = document.getElementById('mainBuyButton'); // выбрали кнопку купить на главной
-		mainBuyButton.addEventListener("click", function(event){ // событие при клике на кнопку купить на главной
-			function stopPageScroll(){
-				scrollPageStatus = true;
-			}
-
-			scrollPageStatus = false;
-			setTimeout(stopPageScroll, 1000);
-
-		})
-
-
-		menuPoint.addEventListener("click", function(event){ // событие при клике на пункт меню
-			function stopPageScroll(){
-				scrollPageStatus = true;
-			}
-
-			scrollPageStatus = false;
-			setTimeout(stopPageScroll, 1000);
-
-		})
-
-
-
-
 		arrPointsMenu.forEach(function(menuPoint, index) { // каждому пункту меню назначили событие
 
 			menuPoint.addEventListener("click", function(event){ // событие при клике на пункт меню
@@ -66,7 +52,7 @@ window.onload = function() {
 				scrollPageStatus = false;
 				setTimeout(stopPageScroll, 1000);
 	
-			})
+			});
 
 
 
@@ -84,7 +70,7 @@ window.onload = function() {
 					arrlineMenu[upLineMenuIndex].classList.add('moveLine'); // добавляем класс наведения на линию
 					arrlineMenu[downLineMenuIndex].classList.add('moveLine');// добавляем класс наведения на линию
 				}
-			})
+			});
 
 			menuPoint.addEventListener("mouseout", function(event){ // событие при уведения на пункт меню
 				let selectPointClass = event.target.classList; // получаем список классов пункта меню
@@ -99,8 +85,8 @@ window.onload = function() {
 					arrlineMenu[upLineMenuIndex].classList.remove('moveLine'); // добавляем класс наведения на линию
 					arrlineMenu[downLineMenuIndex].classList.remove('moveLine');// добавляем класс наведения на линию
 				}
-			})
-		})
+			});
+		});
 	// /МЕНЮ НАВИГАЦИЯ
 
 
@@ -261,7 +247,6 @@ window.onload = function() {
 
 
 	/*
-
 		let menuPointCollection = document.querySelectorAll('.menuPoint'); // выбрали все пункты меню
 		let arrMenuPointCollection = Array.from(menuPointCollection); // сформировали пуктов меню в массив
 		
@@ -284,10 +269,7 @@ window.onload = function() {
 			let selectPoint = event.target; // выбрали элемент на котором сработал
 			let selectPointClass = selectPoint.classList; //выбрали классы которые есть в выбранном элементе
 			let arrselectPointClass = Array.from(selectPointClass); // сформировали все классы в массив
-
 			console.log(arrselectPointClass);
-
-
 		});
 			/*
 			let menuIndex = arrMenuPointCollection.indexOf(event.target);
@@ -472,7 +454,6 @@ window.onload = function() {
 						let arrMenuPointCollectionChild = arrMenuPointCollection[answerMenuName].firstElementChild; // нашли внутренний круг пункта меню
 						arrMenuPointCollectionChild.classList.remove('menuPoint__inside_active'); // поменяли класс внутреннего круга меню	
 						   }
-
 					   } else if(answerMenuNameForDel == undefined && menuStatusDel == false) {
 						   answerMenuNameForDel = answerMenuName; 
 					   }
@@ -528,7 +509,6 @@ window.onload = function() {
 	
 	//АВТОМАТИЧЕСКАЯ ПРОКРУТКА ПО ЭКРАНАМ 1
 	let nowScreenActiv = 0; // переменная для хранения индекса прошлого активного экрана
-
 	let arrScreen = [];
 	arrScreen = ['mainScreen', 'advantagesScreen', 'specificationsScreen', 'photoScreen', 'aboutScreen', 'reviewsScreen', 'deliveryAndPaymentScreen', 'cart']; // массив с названием экранов участвующими в меню
 	 // устанавливаем настройки
@@ -613,7 +593,6 @@ window.onload = function() {
                 // выводим информацию в консоль - проверка работоспособности наблюдателя
                 console.log(seeScreenId);
 				 console.log(arrScreen.indexOf(seeScreenId));
-
 				
                
 				console.log(arrMenuPointCollection[arrScreen.indexOf(seeScreenId)]);
@@ -633,11 +612,9 @@ window.onload = function() {
 					activMenuPointNow__inside.classList.remove('menuPoint__inside_active');//удаляем класс активности
 				}
   
-
             }
         })
     }, options)
-
     // с помощью цикла следим за всеми img на странице
     const arr = document.querySelectorAll('.section')
     arr.forEach(i => {
@@ -740,8 +717,6 @@ window.onload = function() {
 			
 			setTimeout(function(){scrollStatus = true;}, 1000);
 		   }
-
-
 		
 	}); // конец клик на пункт меню
 	
@@ -785,6 +760,5 @@ window.onload = function() {
 		}); // конец mouseout на пункт меню	   
 */
 }; // конец window.onload
-
 
 
