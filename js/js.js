@@ -30,6 +30,32 @@ window.onload = function() {
 
 		console.log(arrPointsMenu);
 
+
+		mainBuyButton = document.getElementById('mainBuyButton'); // выбрали кнопку купить на главной
+		mainBuyButton.addEventListener("click", function(event){ // событие при клике на кнопку купить на главной
+			function stopPageScroll(){
+				scrollPageStatus = true;
+			}
+
+			scrollPageStatus = false;
+			setTimeout(stopPageScroll, 1000);
+
+		})
+
+
+		menuPoint.addEventListener("click", function(event){ // событие при клике на пункт меню
+			function stopPageScroll(){
+				scrollPageStatus = true;
+			}
+
+			scrollPageStatus = false;
+			setTimeout(stopPageScroll, 1000);
+
+		})
+
+
+
+
 		arrPointsMenu.forEach(function(menuPoint, index) { // каждому пункту меню назначили событие
 
 			menuPoint.addEventListener("click", function(event){ // событие при клике на пункт меню
