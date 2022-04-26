@@ -759,6 +759,9 @@ window.onload = function() {
 			}
 		}); // конец mouseout на пункт меню	   
 */
+
+
+document.getElementById('iframe').src="https://www.youtube.com/embed/5vkBznnmNwE";
 }; // конец window.onload
 
 
