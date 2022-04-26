@@ -1,5 +1,20 @@
 // JavaScript Document
 window.onload = function() {
+
+
+	document.addEventListener('mousewheel', function(event) {
+		// останавливаем поведение по умолчанию, то есть прокрутку
+		console.log(event);
+		
+		
+	  });
+
+
+
+
+
+
+
 	let screensPages = document.querySelectorAll('.pageIdentification');
 	let arrScreensPages = Array.from(screensPages); // сформировали пуктов меню в массив
 	let scrollPageStatus = true; // статус постраничного скрола
