@@ -237,15 +237,15 @@ body {
 
 .paralaxBlock__img {
 	background-color: blueviolet;
-	background-image: url(../img/whitewp.jpg); 
+	background-image: url(../img/whitewp-1.jpg); 
 }
 
 .paralaxBlock__img-two {
-	background-image: url(../img/brownwp.jpg);
+	background-image: url(../img/brownwp-1.jpg);
 }
 
 .paralaxBlock__img-three {
-	background-image: url(../img/nightwp.jpg);
+	background-image: url(../img/nightwp-2.jpg);
 }
 
 .product-chair{
@@ -1347,6 +1347,7 @@ line-height: 20px;
 	line-height: 15px;
 
 }
+
 
 .calculationOfDelivery__p{
 		color: white;;
