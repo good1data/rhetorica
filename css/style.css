@@ -1657,13 +1657,16 @@ height: 14px;
 .footer-block {
 	padding-top: 40px;
 	border-top: 1px solid #C5C5C5;
-	height: 251px;
+	width: 100%;
+	margin-top: 80px;
+	padding-bottom: 40px;
 }
 
 .footer-inforegion {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+
 }
 
 .footer-logo {
@@ -1690,8 +1693,7 @@ height: 14px;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	width: 275px;
-	height: 156px;
+
 	gap: 18px;
 }
 
@@ -1743,6 +1745,7 @@ height: 14px;
 .footer-data {
 	padding: 34px;
 	border-top: 1px solid #C5C5C5;
+	width: 100%;
 }
 
 .footer-data__law {
