@@ -565,12 +565,19 @@ body {
 	/*margin-top: 21px;
 	margin-bottom: 21px;
 	background-color: #3a3a3a;*/
+	background: #38383800;
+}
+
+.menuPoint:hover{
+	width: 14px; 
+	height: 14px; 
 }
 
 
 /* класс анимации */
 .moveLine{
  	height: 39px;
+	 
 	
 }
 
@@ -585,12 +592,13 @@ body {
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in;
 	cursor: pointer;
+	background-color: #ff6a0000; 
 }
-
-.menuPointMove{
+/*
+.menuPoint_Move{
 	width: 14px; 
 	height: 14px; 
-}
+}*/
 
 .menuText{
 	font-size: 12px;
@@ -610,12 +618,32 @@ body {
 	height: 32px;
 	opacity: 0%;
 	transition: 1s;
+	
 }
 
-.menuTextMove{
+.menuText_Move{
+
 	right: 120px;
 	opacity: 100%;
+	
+	animation-name: menuText_MoveAnimation;
+	animation-duration: 1s;
+	animation-timing-function: ease-out; 
+
 }
+
+@keyframes menuText_MoveAnimation {
+	0%  { 
+		display: none;
+		right: -180px;
+		}
+  1% { 
+	right: 180px;
+	opacity: 0%;}
+  100% { 	right: 120px;
+	opacity: 100%;}
+  }
+
 /*
 .menuPoint:hover{
 	border: 1px solid #AAAAAA; 
@@ -639,7 +667,7 @@ body {
 	transition-duration: 0.2s;
 	transition-timing-function: ease-out;
 }
-
+/*
 .menuPoint__inside_active{
 	width: 1px; 
 	height: 1px; 
@@ -648,9 +676,9 @@ body {
 	opacity: 100;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-out;
-}
+}*/
 
-/*
+
 .menuPoint:hover .menuPoint__inside{
 	width: 8px; 
 	height: 8px; 
@@ -658,7 +686,9 @@ body {
 	border-radius: 100px;
 	opacity: 100%;
 	
-}*/
+}
+
+
 
 /*
 .menuPoint_active{
