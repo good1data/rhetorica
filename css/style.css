@@ -1270,6 +1270,14 @@ line-height: 20px;
     font-size: 24px;
 }
 
+.input-number__button:hover{
+	color: #FF9142;
+}
+
+.input-number__button:active{
+	color: #FF4D00;
+}
+
 .input-number{
 	display: flex;
 	justify-content: space-between;
@@ -1465,6 +1473,16 @@ height: 14px;
     font-size: 12px;
 	text-decoration: underline;
     
+}
+
+.legalConsent__link:hover{
+	color: #FF9142;
+
+}
+
+.legalConsent__link:active{
+	color: #FF6B00;
+
 }
 
 .orderConfirmationCard{
