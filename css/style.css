@@ -555,16 +555,16 @@ body {
 	cursor: pointer;
 }
 
-.moveArrow-nav:focus {
-	color: #BEBEBE;
+.moveArrow-nav:focus svg path{
+	fill: #BEBEBE;
 }
 
 .moveArrow-nav:hover svg path{
 	fill: #FF9142;
 }
 
-.moveArrow-nav:active {
-	color:#FF4D00;
+.moveArrow-nav:active svg path{
+	fill:#FF4D00;
 }
 
 .menuLine{
