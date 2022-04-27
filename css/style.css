@@ -289,7 +289,7 @@ body {
 }
 
 .product-chair__img {
-    cursor: url("../img/cursor360_96x52_02.cur"), all-scroll;
+    cursor: url("../img/cursor360_96x52_03.cur"), all-scroll;
 }
 
 .product-object {
@@ -333,6 +333,11 @@ body {
 .product-btn__ellips1:active {
 	background-color: #773118;
 	border: #FF6B00;
+}
+
+.inputChairСolor+label:hover::before {
+    border-color: #B5B5B5;
+	background-color: #A0614A;
 }
 
 .product-btn__ellips2 {
