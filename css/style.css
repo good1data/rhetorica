@@ -72,6 +72,9 @@ body {
 }
 */
 
+
+
+
 .menu-left {
 	position: fixed; 
 	z-index: 20; 
@@ -2002,4 +2005,31 @@ height: 14px;
 
 .footer{
 	width: 100%;
+}
+
+
+
+@media ( max-width: 1919px ) and ( min-width: 1440px ) {
+	.header__info {
+		font-size: 16px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 20px;
+		color: #FFFFFF;
+		text-decoration: none;
+		
+	}
+
+	
+.header__tel__number {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 }
