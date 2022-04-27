@@ -1801,6 +1801,7 @@ height: 14px;
 	font-size: 'Montserrat';
 	color: #BEBEBE;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .footer-data__politics:hover {
