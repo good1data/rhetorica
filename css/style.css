@@ -2102,3 +2102,14 @@ height: 14px;
 
 
 } 
+
+@media ( max-width: 1919px ) and ( min-width: 1440px ) {}
+
+@media ( max-width: 1439px ) and ( min-width: 1240px ) {}
+
+@media ( max-width: 1239px ) and ( min-width: 905px ) {}
+
+@media ( max-width: 904px ) and ( min-width: 600px ) {}
+
+@media ( max-width: 599px ) {}
+	
