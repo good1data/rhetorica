@@ -264,7 +264,7 @@ body {
 }
 
 .product-chair__img {
-    cursor: url("../img/cursor360_96x52.cur"), all-scroll;
+    cursor: url("../img/cursor360_96x52_02.cur"), all-scroll;
 }
 
 .product-object {
@@ -1382,6 +1382,10 @@ line-height: 20px;
 	margin-bottom: 24px;
 	color:#D0D0D0;
 	caret-color: #FF9142;
+}
+
+.dataEntryCardSection__input:invalid{
+	border-bottom: 1px solid #ff3333
 }
 
 .dataEntryCardSection__input:focus{
