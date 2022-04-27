@@ -1412,6 +1412,16 @@ line-height: 20px;
 
 }
 
+.productTablePosition__delet:hover{
+	color: #FF9142;
+	
+}
+
+.productTablePosition__delet:active{
+	color: #FF4D00;
+	
+}
+
 .dataEntryCardWrapper{
 	width: 792px;
     
@@ -1742,6 +1752,14 @@ height: 14px;
 	color: #BEBEBE;
 }
 
+.footer-tel:hover {
+	color: #FF9142;
+}
+
+.footer-tel:active {
+	color: #FF4D00;
+}
+
 .footer-network {
 	font-display: flex;
 	flex-direction: row;
@@ -1782,6 +1800,15 @@ height: 14px;
 	line-height: 15px;
 	font-size: 'Montserrat';
 	color: #BEBEBE;
+	cursor: pointer;
+}
+
+.footer-data__politics:hover {
+	color: #FF9142;
+}
+
+.footer-data__politics:active {
+	color: #FF4D00;
 }
 
 
