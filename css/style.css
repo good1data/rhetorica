@@ -2037,4 +2037,50 @@ height: 14px;
     text-decoration: none;
 }
 
+.product-header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: white;
 }
+.product-logo {
+    font-family: 'Mojito Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    color: #FF6B00;
+    line-height: 150px;
+}
+
+.product-price {
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.productAdvantageText__h {
+    font-size: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    color: #1B1B1B;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.productAdvantageText__note {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #707070;
+    text-decoration: none;
+}
+
+
+} 
