@@ -2872,7 +2872,7 @@ height: 14px;
 	}
 
 	.product-subtitle {
-		margin-bottom: 24px;
+		margin-bottom: 16px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
@@ -2899,7 +2899,7 @@ height: 14px;
 	}
 
 	.product-price {
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -2930,7 +2930,7 @@ height: 14px;
 		line-height: 49px;
 		color: #1B1B1B;
 		text-decoration: none;
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 	}
 
 	.productAdvantageText__note {
@@ -2951,7 +2951,7 @@ height: 14px;
 		line-height: 49px;
 		color: white;
 		text-decoration: none;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 
 	.lineData__h {
@@ -2980,7 +2980,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: #BEBEBE;
-		margin-bottom: 56px;
+		margin-bottom: 36px;
 	}
 
 	.aboutItem__mark {
@@ -3008,7 +3008,7 @@ height: 14px;
 		font-style: normal;
 		font-weight: 400;
 		color: white;
-		margin-bottom: 17px;
+		margin-bottom: 8px;
 	}
 
 	.aboutItem__text_nomargin {
@@ -3027,7 +3027,7 @@ height: 14px;
 		font-size: 12px;
 		line-height: 24px;
 		color: #BEBEBE;
-		margin-top: 24px;
+		margin-top: 16px;
 	}
 
 	.termsOfPurchaseText__h {
@@ -3065,7 +3065,7 @@ height: 14px;
 		font-size: 14px;
 		line-height: 17px;
 		color: white;
-		margin-top: 16px;
+		margin-top: 8px;
 	}
 
 	.buyButton__text {
@@ -3075,7 +3075,7 @@ height: 14px;
 		font-size: 10px;
 		line-height: 12px;
 		color: white;
-		margin-left: 10px;
+		margin-left: 12px;
 	}
 
 	.productTableName__h {
@@ -3124,6 +3124,15 @@ height: 14px;
 		width: 24px;
 	}
 	
+	.input-number__button {
+		color: #898989;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
 	.inputCount__p {
 		color: white;
 		font-family: 'Montserrat';
@@ -3175,7 +3184,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
-		margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 
 	.calculationOfDelivery__date {
@@ -3285,7 +3294,7 @@ height: 14px;
 	}
 
 	.product-subtitle {
-		margin-bottom: 24px;
+		margin-bottom: 12px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
@@ -3312,7 +3321,7 @@ height: 14px;
 	}
 
 	.product-price {
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -3343,7 +3352,7 @@ height: 14px;
 		line-height: 49px;
 		color: #1B1B1B;
 		text-decoration: none;
-		margin-bottom: 40px;
+		margin-bottom: 24px;
 	}
 
 	.productAdvantageText__note {
@@ -3364,7 +3373,7 @@ height: 14px;
 		line-height: 49px;
 		color: white;
 		text-decoration: none;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 
 	.lineData__h {
@@ -3393,7 +3402,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: #BEBEBE;
-		margin-bottom: 56px;
+		margin-bottom: 36px;
 	}
 
 	.aboutItem__mark {
@@ -3421,7 +3430,7 @@ height: 14px;
 		font-style: normal;
 		font-weight: 400;
 		color: white;
-		margin-bottom: 17px;
+		margin-bottom: 8px;
 	}
 
 	.aboutItem__text_nomargin {
@@ -3440,7 +3449,7 @@ height: 14px;
 		font-size: 12px;
 		line-height: 24px;
 		color: #BEBEBE;
-		margin-top: 24px;
+		margin-top: 8px;
 	}
 
 	.termsOfPurchaseText__h {
@@ -3488,7 +3497,7 @@ height: 14px;
 		font-size: 10px;
 		line-height: 12px;
 		color: white;
-		margin-left: 10px;
+		margin-left: 12px;
 	}
 
 	.productTableName__h {
@@ -3545,6 +3554,15 @@ height: 14px;
 		font-size: 12px;
 	}
 
+	.input-number__button {
+		color: #898989;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
 	.productTableSum__text {
 		font-family: 'Montserrat';
 		font-style: normal;
@@ -3588,7 +3606,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
-		margin-bottom: 32px;
+		margin-bottom: 20px;
 	}
 
 	.calculationOfDelivery__date {
@@ -3654,22 +3672,13 @@ height: 14px;
 	}
 
 	.footer-text {
-		margin-bottom: 16px;
+		margin-bottom: 22px;
 		font-size: 12px;
 		line-height: 24px;
 		font-size: 'Montserrat';
 		color: #BEBEBE;
 	}
-
-	.footer-tel {
-		margin-bottom: 16px;
-		text-decoration: none;
-		font-size: 14px;
-		line-height: 17px;
-		font-size: 'Montserrat';
-		color: #BEBEBE;
-	}
-
+	
 	.footer-data__law {
 		font-size: 9px;
 		line-height: 11px;
