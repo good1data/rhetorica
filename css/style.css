@@ -1200,7 +1200,7 @@ height: 319px;
 			font-family: 'Montserrat';
 	font-style: normal;
 	font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     color: white;
 	margin-top: 16px;
@@ -1236,7 +1236,7 @@ height: 319px;
     font-size: 16px;
     line-height: 20px;
     color: white;
-	margin-left: 10px;
+	margin-left: 13px;
 }
 
 .nextButton{
@@ -1675,7 +1675,7 @@ line-height: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 17px;
 }
 
@@ -2101,10 +2101,7 @@ height: 14px;
 		line-height: 20px;
 		color: #FFFFFF;
 		text-decoration: none;
-		
-	}
-
-	
+			}
 .header__tel__number {
     font-size: 16px;
     font-family: 'Montserrat';
@@ -2114,7 +2111,21 @@ height: 14px;
     color: #FFFFFF;
     text-decoration: none;
 }
-
+.product-altrnt__text {
+    margin-bottom: 16px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #BEBEBE;
+}
+.product-subtitle {
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BEBEBE;
+}
 .product-header {
     font-family: 'Montserrat';
     font-style: normal;
@@ -2130,15 +2141,27 @@ height: 14px;
     color: #FF6B00;
     line-height: 150px;
 }
-
 .product-price {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 31px;
     line-height: 42px;
     color: #FFFFFF;
+}
+.product-button {
+    padding: 24px 120px 24px 120px;
+    border: none;
+    background-color: #FF6B00;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 316px;
+    cursor: pointer;
 }
 .productAdvantageText__h {
     font-size: 31px;
@@ -2148,7 +2171,7 @@ height: 14px;
     line-height: 49px;
     color: #1B1B1B;
     text-decoration: none;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 .productAdvantageText__note {
     font-size: 16px;
@@ -2167,7 +2190,7 @@ height: 14px;
     line-height: 49px;
     color: white;
     text-decoration: none;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 }
 .lineData__h {
     font-size: 13px;
@@ -2193,108 +2216,1966 @@ height: 14px;
     font-weight: 400;
     line-height: 22px;
     color: #BEBEBE;
-    margin-bottom: 56px;
+    margin-bottom: 42px;
 }
-
-
+.aboutItem__mark {
+    font-size: 33px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    color: #FF6B00;
+}
+.aboutItem__text {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #BEBEBE;
+    margin-left: 16px;
+}
+.aboutItem__mark_small {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 16px;
+}
+.aboutItem__text_nomargin {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #BEBEBE;
+}
+.infoCard__p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #BEBEBE;
+    margin-top: 24px;
+}
+.termsOfPurchaseText__h {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 16px;
+    line-height: 22px;
+}
+.termsOfPurchaseText__p {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: #BEBEBE;
+    line-height: 22px;
+}
+.priceAndNameProduct__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.priceAndNameProduct__color {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.priceAndNameProduct__price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+}
+.buyButton__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    margin-left: 13px;
+}
+.productTableName__h {
+    color: #BEBEBE;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+}
+.productTableWraper__noProduct {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 100%;
+}
+.priceAndNameProduct__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.productTablePosition__color {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 104px;
+    text-align: center;
+}
+.inputCount__input {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    overflow: auto;
+    text-align: center;
+    outline: none;
+    width: 24px;
+}
+.inputCount__p {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+.productTablePosition__cost {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    width: 72px;
+}
+.productTableSum__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: white;
+}
+.productTableSum__totalCost {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}
+.nextButton {
+    border: 1px solid #FFFFFF;
+    min-width: 224px;
+    height: 68px;
+    background: none;
+    color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 80px;
+    padding-left: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.dataEntryCard__h {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 28px;
+}
+.calculationOfDelivery__p {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.calculationOfDelivery__date {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.finalConditions__text {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.finalConditions__text_big {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+}
+.finalConditions__namber_big {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+}
+.finalConditions__namber {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.legalConsent__text {
+    color: #BEBEBE;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+}
+.footer-text {
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 24px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+}
+.footer-tel {
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+}
+.footer-data__law {
+    font-size: 10px;
+    line-height: 15px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+}
+.footer-data__politics {
+    border-bottom: 1px solid #777777;
+    font-size: 10px;
+    line-height: 15px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+    cursor: pointer;
+    text-decoration: none;
+}
 } 
 
-@media ( max-width: 1919px ) and ( min-width: 1440px ) {
+@media ( max-width: 1439px ) and ( min-width: 1240px ) {
+	.header__info {
+		font-size: 16px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 20px;
+		color: #FFFFFF;
+		text-decoration: none;
+			}
+.header__tel__number {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.product-altrnt__text {
+    margin-bottom: 16px;
+    font-size: 10px;
+    line-height: 15px;
+    color: #BEBEBE;
+}
+.product-subtitle {
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BEBEBE;
+}
+.product-header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    color: white;
+}
+.product-logo {
+    font-family: 'Mojito Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    color: #FF6B00;
+    line-height: 150px;
+}
+.product-price {
+    margin-bottom: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.product-button {
+    padding: 24px 120px 24px 120px;
+    border: none;
+    background-color: #FF6B00;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 316px;
+    cursor: pointer;
+}
+.productAdvantageText__h {
+    font-size: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    color: #1B1B1B;
+    text-decoration: none;
+    margin-bottom: 32px;
+}
+.productAdvantageText__note {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #707070;
+    text-decoration: none;
+}
+.info__h {
+    font-size: 33px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 48px;
+}
+.lineData__h {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #BEBEBE;
+}
+.lineData__value {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    width: 291px;
+}
+.info__p {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #BEBEBE;
+    margin-bottom: 42px;
+}
+.aboutItem__mark {
+    font-size: 33px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    color: #FF6B00;
+}
+.aboutItem__text {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #BEBEBE;
+    margin-left: 16px;
+}
+.aboutItem__mark_small {
+    font-size: 13px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 16px;
+}
+.aboutItem__text_nomargin {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    color: #BEBEBE;
+}
+.infoCard__p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #BEBEBE;
+    margin-top: 24px;
+}
+.termsOfPurchaseText__h {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 16px;
+    line-height: 22px;
+}
+.termsOfPurchaseText__p {
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    color: #BEBEBE;
+    line-height: 22px;
+}
+.priceAndNameProduct__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.priceAndNameProduct__color {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.priceAndNameProduct__price {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: white;
+    margin-top: 16px;
+}
+.buyButton__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    margin-left: 13px;
+}
+.productTableName__h {
+    color: #BEBEBE;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+}
+.productTableWraper__noProduct {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 100%;
+}
+.priceAndNameProduct__name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.productTablePosition__color {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 104px;
+    text-align: center;
+}
+.inputCount__input {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    background-color: transparent;
+    border: none;
+    overflow: auto;
+    text-align: center;
+    outline: none;
+    width: 24px;
+}
+.inputCount__p {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+}
+.productTablePosition__cost {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    width: 72px;
+}
+.productTableSum__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: white;
+}
+.productTableSum__totalCost {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+}
+.nextButton {
+    border: 1px solid #FFFFFF;
+    min-width: 224px;
+    height: 68px;
+    background: none;
+    color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 80px;
+    padding-left: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.dataEntryCard__h {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    margin-bottom: 28px;
+}
+.calculationOfDelivery__p {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.calculationOfDelivery__date {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.finalConditions__text {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.finalConditions__text_big {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+}
+.finalConditions__namber_big {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+}
+.finalConditions__namber {
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+.legalConsent__text {
+    color: #BEBEBE;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+}
+.footer-text {
+    margin-bottom: 16px;
+    font-size: 13px;
+    line-height: 24px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+}
+.footer-tel {
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 22px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+}
+.footer-data__law {
+    font-size: 10px;
+    line-height: 15px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+}
+.footer-data__politics {
+    border-bottom: 1px solid #777777;
+    font-size: 10px;
+    line-height: 15px;
+    font-size: 'Montserrat';
+    color: #BEBEBE;
+    cursor: pointer;
+    text-decoration: none;
+}
+}
 
-	.product-button{
-		width: 217px;
-		padding: 16px;
-	}
-	
-	.product {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: 1096px;
-		width: 100%;
+@media ( max-width: 1239px ) and ( min-width: 905px ) {
+	.header__info {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 17px;
+		color: #FFFFFF;
+		text-decoration: none;
 		
 	}
-	
-	.menu-height {
-		height: calc(100vh - 90px);
-		width: 60px;
-		border-left: 0.5px solid #AAAAAA;
-		right: 0;
+
+	.header__tel__number {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		line-height: 17px;
+		color: #FFFFFF;
+		text-decoration: none;
 	}
 
-	
-	.menu-start {
-		margin-right: 52px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 15px;
+	.product-altrnt__text {
+		margin-bottom: 16px;
+		font-size: 9px;
+		line-height: 11px;
+		color: #BEBEBE;
 	}
-	.menu-end {
-		height: calc(100vh - 90px);
-		width: 60px;
-		border-left: 0.5px solid #AAAAAA;
-		right: 0;
+
+	.product-subtitle {
+		margin-bottom: 16px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #BEBEBE;
 	}
-	.menu-left {
-		position: fixed;
-		z-index: 20;
-		height: 100vh;
-		width: 60px;
-		border-right: 0.5px solid #AAAAAA;
+
+	.product-header {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 37px;
+		color: white;
+	}
+
+	.product-logo {
+		font-family: 'Mojito Web';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 57px;
+		color: #FF6B00;
+		line-height: 150px;
+	}
+
+	.product-price {
+		margin-bottom: 24px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 42px;
+		color: #FFFFFF;
+	}
+
+	.product-button {
+		padding: 16px 44px 16px 44px;
+		border: none;
+		background-color: #FF6B00;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		color: #FFFFFF;
+		width: 316px;
 		cursor: pointer;
 	}
 
-	.productAdvantageCard {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: 1096px;
-		width: 100%;
+	.productAdvantageText__h {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: #1B1B1B;
+		text-decoration: none;
+		margin-bottom: 24px;
 	}
 
-	.productAdvantageCard__img {
-		max-width: 424px;
-		max-height: 276px;
+	.productAdvantageText__note {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #707070;
+		text-decoration: none;
 	}
 
-	.infoCard {
-		display: flex;
-		justify-content: space-between;
-		max-width: 1096px;
-		width: 100%;
-		flex-wrap: wrap;
+	.info__h {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: white;
+		text-decoration: none;
+		margin-bottom: 40px;
 	}
 
-	.scheme__img {
-		display: flex;
-		justify-content: space-between;
-	}
-	
-	.scheme__img {
-		display: flex;
-		justify-content: space-between;
-		height: 359;
-		width: auto;
-	}
-
-	.lineData {
-		display: flex;
-		justify-content: space-between;
-		width: 425px;
-		margin-bottom: 38px;
+	.lineData__h {
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		color: #BEBEBE;
 	}
 
 	.lineData__value {
-		width: 224px;
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: white;
+		width: 291px;
+	}
+
+	.info__p {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+		margin-bottom: 36px;
+	}
+
+	.aboutItem__mark {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: #FF6B00;
+	}
+
+	.aboutItem__text {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+		margin-left: 16px;
+	}
+
+	.aboutItem__mark_small {
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		color: white;
+		margin-bottom: 8px;
+	}
+
+	.aboutItem__text_nomargin {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+	}
+
+	.infoCard__p {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: #BEBEBE;
+		margin-top: 16px;
+	}
+
+	.termsOfPurchaseText__h {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		color: white;
+		margin-bottom: 16px;
+		line-height: 17px;
+	}
+
+	.termsOfPurchaseText__p {
+		font-size: 13px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		color: #BEBEBE;
+		line-height: 16px;
+	}
+
+	.priceAndNameProduct__name {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: white;
+	}
+
+	.priceAndNameProduct__price {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: white;
+		margin-top: 8px;
+	}
+
+	.buyButton__text {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		color: white;
+		margin-left: 12px;
+	}
+
+	.productTableName__h {
+		color: #BEBEBE;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.productTablePosition__cost {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		text-align: center;
+		width: 72px;
+	}
+
+	.productTablePosition__color {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		width: 100%;
+		max-width: 104px;
+		text-align: center;
+	}
+
+	.inputCount__input {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		background-color: transparent;
+		border: none;
+		overflow: auto;
+		text-align: center;
+		outline: none;
+		width: 24px;
+	}
+	
+	.input-number__button {
+		color: #898989;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.inputCount__p {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	.productTableSum__text {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: white;
+	}
+
+	.productTableSum__totalCost {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: white;
+	}
+
+	.nextButton {
+		border: 1px solid #FFFFFF;
+		min-width: 224px;
+		height: 68px;
+		background: none;
+		color: #FFFFFF;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-right: 80px;
+		padding-left: 80px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		cursor: pointer;
+	}
+
+	.dataEntryCard__h {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		margin-bottom: 20px;
+	}
+
+	.calculationOfDelivery__date {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.calculationOfDelivery__p {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.finalConditions__text {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.finalConditions__namber {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	.finalConditions__text_big {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.finalConditions__namber_big {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.legalConsent__text {
+		color: #BEBEBE;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 9px;
+	}
+
+	.footer-text {
+		margin-bottom: 16px;
+		font-size: 12px;
+		line-height: 24px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-tel {
+		margin-bottom: 16px;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 17px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-data__law {
+		font-size: 9px;
+		line-height: 11px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-data__politics {
+		border-bottom: 1px solid #777777;
+		font-size: 9px;
+		line-height: 11px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+		cursor: pointer;
+		text-decoration: none;
 	}
 }
 
-@media ( max-width: 1439px ) and ( min-width: 1240px ) {}
+@media ( max-width: 904px ) and ( min-width: 600px ) {
 
-@media ( max-width: 1239px ) and ( min-width: 905px ) {}
+	.product-altrnt__text {
+		margin-bottom: 16px;
+		font-size: 9px;
+		line-height: 11px;
+		color: #BEBEBE;
+	}
 
-@media ( max-width: 904px ) and ( min-width: 600px ) {}
+	.product-subtitle {
+		margin-bottom: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #BEBEBE;
+	}
 
-@media ( max-width: 599px ) {}
+	.product-header {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 37px;
+		color: white;
+	}
+
+	.product-logo {
+		font-family: 'Mojito Web';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 57px;
+		color: #FF6B00;
+		line-height: 150px;
+	}
+
+	.product-price {
+		margin-bottom: 24px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 42px;
+		color: #FFFFFF;
+	}
+
+	.product-button {
+		padding: 16px 44px 16px 44px;
+		border: none;
+		background-color: #FF6B00;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		color: #FFFFFF;
+		width: 316px;
+		cursor: pointer;
+	}
+
+	.productAdvantageText__h {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: #1B1B1B;
+		text-decoration: none;
+		margin-bottom: 24px;
+	}
+
+	.productAdvantageText__note {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #707070;
+		text-decoration: none;
+	}
+
+	.info__h {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: white;
+		text-decoration: none;
+		margin-bottom: 40px;
+	}
+
+	.lineData__h {
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		color: #BEBEBE;
+	}
+
+	.lineData__value {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: white;
+		width: 291px;
+	}
+
+	.info__p {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+		margin-bottom: 36px;
+	}
+
+	.aboutItem__mark {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: #FF6B00;
+	}
+
+	.aboutItem__text {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+		margin-left: 16px;
+	}
+
+	.aboutItem__mark_small {
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		color: white;
+		margin-bottom: 8px;
+	}
+
+	.aboutItem__text_nomargin {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+	}
+
+	.infoCard__p {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: #BEBEBE;
+		margin-top: 8px;
+	}
+
+	.termsOfPurchaseText__h {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		color: white;
+		margin-bottom: 16px;
+		line-height: 17px;
+	}
+
+	.termsOfPurchaseText__p {
+		font-size: 13px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		color: #BEBEBE;
+		line-height: 16px;
+	}
+
+	.priceAndNameProduct__name {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: white;
+	}
+
+	.priceAndNameProduct__price {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: white;
+		margin-top: 16px;
+	}
+
+	.buyButton__text {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		color: white;
+		margin-left: 12px;
+	}
+
+	.productTableName__h {
+		color: #BEBEBE;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.productTablePosition__cost {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		text-align: center;
+		width: 72px;
+	}
+
+	.productTablePosition__color {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		width: 100%;
+		max-width: 104px;
+		text-align: center;
+	}
+
+	.inputCount__input {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		background-color: transparent;
+		border: none;
+		overflow: auto;
+		text-align: center;
+		outline: none;
+		width: 24px;
+	}
+
+	.inputCount__p {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	.input-number__button {
+		color: #898989;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 24px;
+		cursor: pointer;
+	}
+
+	.productTableSum__text {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: white;
+	}
+
+	.productTableSum__totalCost {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: white;
+	}
+
+	.nextButton {
+		border: 1px solid #FFFFFF;
+		min-width: 224px;
+		height: 68px;
+		background: none;
+		color: #FFFFFF;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-right: 80px;
+		padding-left: 80px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		cursor: pointer;
+	}
+
+	.dataEntryCard__h {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		margin-bottom: 20px;
+	}
+
+	.calculationOfDelivery__date {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.calculationOfDelivery__p {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.finalConditions__text {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.finalConditions__namber {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.finalConditions__text_big {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.finalConditions__namber_big {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.legalConsent__text {
+		color: #BEBEBE;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 9px;
+	}
+
+	.footer-text {
+		margin-bottom: 16px;
+		font-size: 12px;
+		line-height: 24px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+	
+	.footer-data__law {
+		font-size: 9px;
+		line-height: 11px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-data__politics {
+		border-bottom: 1px solid #777777;
+		font-size: 9px;
+		line-height: 11px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
+@media ( max-width: 599px ) {
+	
+	.product-altrnt__text {
+		margin-right: 8px;
+		font-size: 12px;
+		line-height: 15px;
+		color: #BEBEBE;
+	}
+
+	.product-subtitle {
+		margin-bottom: 24px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
+		color: #BEBEBE;
+	}
+
+	.product-header {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 35px;
+		color: white;
+	}
+
+	.product-logo {
+		font-family: 'Mojito Web';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 46px;
+		color: #FF6B00;
+		line-height: 150px;
+	}
+
+	.product-price {
+		margin-bottom: 16px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 42px;
+		color: #FFFFFF;
+	}
+
+	.product-button {
+		padding: 16px 44px 16px 44px;
+		border: none;
+		background-color: #FF6B00;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		color: #FFFFFF;
+		width: 316px;
+		cursor: pointer;
+	}
+
+	.productAdvantageText__h {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: #1B1B1B;
+		text-decoration: none;
+		margin-bottom: 32px;
+	}
+
+	.productAdvantageText__note {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #707070;
+		text-decoration: none;
+	}
+
+	.info__h {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: white;
+		text-decoration: none;
+		margin-bottom: 32px;
+	}
+
+	.lineData__h {
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		color: #BEBEBE;
+	}
+
+	.lineData__value {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: white;
+		width: 291px;
+	}
+
+	.info__p {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+		margin-bottom: 36px;
+	}
+
+	.aboutItem__mark {
+		font-size: 25px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 49px;
+		color: #FF6B00;
+	}
+
+	.aboutItem__text {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+		margin-left: 16px;
+	}
+
+	.aboutItem__mark_small {
+		font-size: 12px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		color: white;
+		margin-bottom: 8px;
+	}
+
+	.aboutItem__text_nomargin {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		color: #BEBEBE;
+	}
+
+	.infoCard__p {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: #BEBEBE;
+		margin-top: 8px;
+	}
+
+	.termsOfPurchaseText__h {
+		font-size: 14px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		color: white;
+		margin-bottom: 16px;
+		line-height: 17px;
+	}
+
+	.termsOfPurchaseText__p {
+		font-size: 13px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		color: #BEBEBE;
+		line-height: 16px;
+	}
+
+	.priceAndNameProduct__name {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		color: white;
+	}
+
+	.priceAndNameProduct__price {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: white;
+		margin-top: 8px;
+	}
+
+	.buyButton__text {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		color: white;
+		margin-left: 12px;
+	}
+
+	.productTableName__h {
+		color: #BEBEBE;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	.productTablePosition__color {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+		width: 100%;
+		max-width: 104px;
+		text-align: center;
+	}
+	.productTablePosition__cost {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		text-align: center;
+		width: 72px;
+	}
+
+	.inputCount__input {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		background-color: transparent;
+		border: none;
+		overflow: auto;
+		text-align: center;
+		outline: none;
+		width: 24px;
+	}
+
+	.inputCount__p {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+	}
+
+	.productTableSum__text {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: white;
+	}
+
+	.productTableSum__totalCost {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: white;
+	}
+
+	.nextButton {
+		border: 1px solid #FFFFFF;
+		min-width: 224px;
+		height: 68px;
+		background: none;
+		color: #FFFFFF;
+		padding-top: 24px;
+		padding-bottom: 24px;
+		padding-right: 80px;
+		padding-left: 80px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+		cursor: pointer;
+	}
+
+	.dataEntryCard__h {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		margin-bottom: 16px;
+	}
+
+	.calculationOfDelivery__date {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.calculationOfDelivery__p {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.finalConditions__text {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	.finalConditions__namber {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 16px;
+	}
+
+	.finalConditions__text_big {
+		color: white;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.legalConsent__text {
+		color: #BEBEBE;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 9px;
+	}
+
+	.footer-text {
+		margin-bottom: 16px;
+		font-size: 12px;
+		line-height: 24px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-tel {
+		margin-bottom: 16px;
+		text-decoration: none;
+		font-size: 14px;
+		line-height: 17px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-data__law {
+		font-size: 9px;
+		line-height: 11px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+	}
+
+	.footer-data__politics {
+		border-bottom: 1px solid #777777;
+		font-size: 9px;
+		line-height: 11px;
+		font-size: 'Montserrat';
+		color: #BEBEBE;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}
+
 	
