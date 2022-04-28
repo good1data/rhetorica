@@ -3691,7 +3691,7 @@ height: 14px;
 @media ( max-width: 599px ) {
 	
 	.product-altrnt__text {
-		margin-bottom: 16px;
+		margin-right: 8px;
 		font-size: 12px;
 		line-height: 15px;
 		color: #BEBEBE;
@@ -3725,7 +3725,7 @@ height: 14px;
 	}
 
 	.product-price {
-		margin-bottom: 32px;
+		margin-bottom: 16px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -3756,7 +3756,7 @@ height: 14px;
 		line-height: 49px;
 		color: #1B1B1B;
 		text-decoration: none;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 	}
 
 	.productAdvantageText__note {
@@ -3777,7 +3777,7 @@ height: 14px;
 		line-height: 49px;
 		color: white;
 		text-decoration: none;
-		margin-bottom: 60px;
+		margin-bottom: 32px;
 	}
 
 	.lineData__h {
@@ -3806,7 +3806,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: #BEBEBE;
-		margin-bottom: 56px;
+		margin-bottom: 36px;
 	}
 
 	.aboutItem__mark {
@@ -3834,7 +3834,7 @@ height: 14px;
 		font-style: normal;
 		font-weight: 400;
 		color: white;
-		margin-bottom: 17px;
+		margin-bottom: 8px;
 	}
 
 	.aboutItem__text_nomargin {
@@ -3853,7 +3853,7 @@ height: 14px;
 		font-size: 12px;
 		line-height: 24px;
 		color: #BEBEBE;
-		margin-top: 24px;
+		margin-top: 8px;
 	}
 
 	.termsOfPurchaseText__h {
@@ -3891,7 +3891,7 @@ height: 14px;
 		font-size: 14px;
 		line-height: 17px;
 		color: white;
-		margin-top: 16px;
+		margin-top: 8px;
 	}
 
 	.buyButton__text {
@@ -3901,7 +3901,7 @@ height: 14px;
 		font-size: 10px;
 		line-height: 12px;
 		color: white;
-		margin-left: 10px;
+		margin-left: 12px;
 	}
 
 	.productTableName__h {
@@ -4000,7 +4000,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
-		margin-bottom: 32px;
+		margin-bottom: 25px;
 	}
 
 	.calculationOfDelivery__date {
