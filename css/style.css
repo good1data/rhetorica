@@ -312,17 +312,99 @@ body {
     color: #BEBEBE;
 }
 
+
+/* ПЕРЕКЛЮЧАТЕЛЬ */
+/* создание в label псевдоэлемента  before со следующими стилями */
+
+/*
 .product-btn__ellips1 {
     margin-bottom: 16px;
     background-color: #773118;
     border-radius: 100%;
-    border: 1px solid #FF6B00;
+    border: 1px solid #B5B5B5
     width: 33px;
     height: 33px;
 	cursor: pointer;
-	transition: background .3s ease, color 0.2s linear;
+	
 }
 
+.product-btn__ellips2 {
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    border: 1px solid #B5B5B5
+    width: 33px;
+    height: 33px;
+	
+	cursor: pointer;
+}
+
+ стили при наведении курсора на радио 
+.product-btn__ellips1 input:checked {
+    background-color: #9bfc00;
+  }
+*/
+/* 
+скаченные стили
+*/
+.form_toggle { /* product-btn */
+	display: flex;
+    flex-direction: column;
+	overflow: hidden;
+	height: 82px;
+	justify-content: space-between;
+}
+.form_toggle-item {  /* product-btn */
+	float: left;
+	display: inline-block;
+}
+.form_toggle-item input[type=radio] {
+	display: none;
+}
+.form_toggle-item label {
+	display: inline-block;
+	padding: 0px 15px;   
+	line-height: 34px;    
+	border: 1px solid #999;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;   
+	width: 33px;
+	height: 33px;
+	border-radius: 100px;
+}
+
+ 
+.form_toggle .item-1 label {  
+	background: #773118;
+	border: 1px solid #B5B5B5;
+	
+}
+.form_toggle .item-2 label {
+	background: #FFFFFF;
+	border: 1px solid #B5B5B5;
+}
+ 
+/* Checked */
+.form_toggle .item-1 input[type=radio]:checked + label {
+	border: 2px solid #FF6B00;
+}
+.form_toggle .item-2 input[type=radio]:checked + label {
+	border: 2px solid #FF6B00;
+}
+
+.form_toggle-item #chairBrown:hover {
+	background: #A0614A;
+
+}
+
+.form_toggle-item #chairWhite:hover {
+	background: #CACACA;
+
+
+}
+
+
+/*
 .product-btn__ellips1:focus {
 	background-color: #773118;
 	border: #B5B5B5;
@@ -343,15 +425,8 @@ body {
 	background-color: #A0614A;
 }
 
-.product-btn__ellips2 {
-    background-color: #FFFFFF;
-    border-radius: 100%;
-    border: 1px solid #7C2A22;
-    width: 33px;
-    height: 33px;
-	transition: background .3s ease, color 0.2s linear;
-	cursor: pointer;
-}
+
+
 
 .product-btn__ellips2:focus {
 	background-color: #FFFFFF;
@@ -367,6 +442,9 @@ body {
 	background-color: #FFFFFF;
 	border: #FF6B00;
 }
+*/
+
+/* ПЕРЕКЛЮЧАТЕЛЬ */
 
 .product-btn {
     display: flex;
@@ -3700,7 +3778,7 @@ height: 14px;
 @media ( max-width: 599px ) {
 	
 	.product-altrnt__text {
-		margin-bottom: 16px;
+		margin-right: 8px;
 		font-size: 12px;
 		line-height: 15px;
 		color: #BEBEBE;
@@ -3734,7 +3812,7 @@ height: 14px;
 	}
 
 	.product-price {
-		margin-bottom: 32px;
+		margin-bottom: 16px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -3765,7 +3843,7 @@ height: 14px;
 		line-height: 49px;
 		color: #1B1B1B;
 		text-decoration: none;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 	}
 
 	.productAdvantageText__note {
@@ -3786,7 +3864,7 @@ height: 14px;
 		line-height: 49px;
 		color: white;
 		text-decoration: none;
-		margin-bottom: 60px;
+		margin-bottom: 32px;
 	}
 
 	.lineData__h {
@@ -3815,7 +3893,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: #BEBEBE;
-		margin-bottom: 56px;
+		margin-bottom: 36px;
 	}
 
 	.aboutItem__mark {
@@ -3843,7 +3921,7 @@ height: 14px;
 		font-style: normal;
 		font-weight: 400;
 		color: white;
-		margin-bottom: 17px;
+		margin-bottom: 8px;
 	}
 
 	.aboutItem__text_nomargin {
@@ -3862,7 +3940,7 @@ height: 14px;
 		font-size: 12px;
 		line-height: 24px;
 		color: #BEBEBE;
-		margin-top: 24px;
+		margin-top: 8px;
 	}
 
 	.termsOfPurchaseText__h {
@@ -3900,7 +3978,7 @@ height: 14px;
 		font-size: 14px;
 		line-height: 17px;
 		color: white;
-		margin-top: 16px;
+		margin-top: 8px;
 	}
 
 	.buyButton__text {
@@ -3910,7 +3988,7 @@ height: 14px;
 		font-size: 10px;
 		line-height: 12px;
 		color: white;
-		margin-left: 10px;
+		margin-left: 12px;
 	}
 
 	.productTableName__h {
@@ -4009,7 +4087,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 15px;
-		margin-bottom: 32px;
+		margin-bottom: 16px;
 	}
 
 	.calculationOfDelivery__date {
@@ -4099,4 +4177,5 @@ height: 14px;
 		text-decoration: none;
 	}
 }
+
 	
