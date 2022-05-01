@@ -73,7 +73,10 @@ body {
 */
 
 
-
+.headerMenu{
+	display: none;
+	width: 28px;
+}
 
 .menu-left {
 	position: fixed; 
@@ -893,7 +896,15 @@ body {
     width: 596px;
 }
 	
-
+.infoCard_collumCenter{
+	display: flex;
+	justify-content: space-between;
+	max-width: 1414px;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+    width: 596px;
+}
 
 
 .infoCard_gird{
@@ -1271,6 +1282,18 @@ height: 319px;
 	color: #FF4D00
 }
 
+.productTableName__h:nth-child(1){
+	color: #BEBEBE;
+		font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+	text-align: center;
+	display: none;
+	
+	
+}
 .productTableName__h{
 	color: #BEBEBE;
 		font-family: 'Montserrat';
@@ -1279,6 +1302,7 @@ height: 319px;
     font-size: 14px;
     line-height: 24px;
 	text-align: center;
+	
 	
 }
 /*
@@ -1344,7 +1368,7 @@ line-height: 20px;
 
 
 .productTableName{
-	min-width: 926px;
+	width: 926px;
 	display: flex;
 	justify-content: space-between;
 	    
@@ -1554,7 +1578,7 @@ line-height: 20px;
     justify-content: space-between;
 }
 
-.dataEntryCardSection__input{
+.dataEntryCardSection__input, .dataEntryCardSection__input_medium, .dataEntryCardSection__input_small, .dataEntryCardSection__input_half{
 	height: 32px;
 	width: 340px;
 	border: none;
@@ -1566,17 +1590,19 @@ line-height: 20px;
 	caret-color: #FF9142;
 }
 
-.dataEntryCardSection__input:invalid{
+
+
+.dataEntryCardSection__input:invalid, .dataEntryCardSection__input_medium:invalid, .dataEntryCardSection__input_small:invalid, .dataEntryCardSection__input_half:invalid{
 	border-bottom: 1px solid #ff3333
 }
 
-.dataEntryCardSection__input:focus{
+.dataEntryCardSection__input:focus, .dataEntryCardSection__input_medium:focus, .dataEntryCardSection__input_small:focus, .dataEntryCardSection__input_half:focus{
 
 	border-bottom: 1px solid #FF9142;
 
 }
 
-.dataEntryCardSection__input::placeholder{
+.dataEntryCardSection__input::placeholder, .dataEntryCardSection__input_medium::placeholder, .dataEntryCardSection__input_small::placeholder, .dataEntryCardSection__input_half::placeholder{
 		color: #BEBEBE;;
 		font-family: 'Montserrat';
 	font-style: normal;
@@ -1785,12 +1811,16 @@ height: 14px;
 	width: 100%;
 	margin-top: 80px;
 	padding-bottom: 40px;
+	display: flex;
+    justify-content: center;
 }
 
 .footer-inforegion {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
+    max-width: 1414px;
+    width: 100%;
 
 }
 
@@ -2093,6 +2123,16 @@ height: 14px;
 
 
 @media ( max-width: 1919px ) and ( min-width: 1440px ) {
+.section{
+	min-height: 902px;
+}
+	.product{
+		max-width: 1096px
+	}
+	.product-chair__img{
+		width: 410px;
+		height: auto;
+	}
 	.header__info {
 		font-size: 16px;
 		font-family: 'Montserrat';
@@ -2139,10 +2179,14 @@ height: 14px;
     font-weight: 400;
     font-size: 70px;
     color: #FF6B00;
-    line-height: 150px;
+    line-height: 100px;
+}
+
+.product-text {
+    margin-bottom: 40px;
 }
 .product-price {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -2190,7 +2234,7 @@ height: 14px;
     line-height: 49px;
     color: white;
     text-decoration: none;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 .lineData__h {
     font-size: 13px;
@@ -2207,7 +2251,22 @@ height: 14px;
     font-weight: 400;
     line-height: 22px;
     color: white;
-    width: 291px;
+    width: 224px;
+}
+.lineData{
+	width: 425px;
+}
+
+.infoCard__img{
+	width: 424px;
+}
+
+.infoSection{
+	max-width: 422px;
+}
+
+.scheme{
+	width: 558px;
 }
 .info__p {
     font-size: 16px;
@@ -2395,14 +2454,14 @@ height: 14px;
 }
 .nextButton {
     border: 1px solid #FFFFFF;
-    min-width: 224px;
+    min-width: 219px;
     height: 68px;
     background: none;
     color: #FFFFFF;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -2503,10 +2562,251 @@ height: 14px;
     color: #BEBEBE;
     cursor: pointer;
     text-decoration: none;
+
+	
 }
+
+.header-container {
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	max-width: 1096px;
+    width: 100%;
+}
+
+.productAdvantageCard{
+	max-width: 1096px;
+}
+
+.infoCard {
+	max-width: 1096px;
+}
+
+.productAdvantageCard__img{
+	width: 424px;
+}
+
+.scheme__img{
+	
+	height: 359px;
+}
+
+.infoCard_collumCenter{
+	display: flex;
+	justify-content: center;
+	max-width: 1414px;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: column;
+    width: 445px;
+}
+
+.thumb-wrap{
+	max-width: 1096px;
+	max-height: 618px;
+}
+
+.termsOfPurchaseCard{
+	width: 328px;
+	height: 204px;
+	padding: 22px;
+}
+
+.termsOfPurchaseCard__ico {
+	width: 78px;
+	height: 78px;
+}
+
+.termsOfPurchaseText{
+	width: 180px;
+}
+.productTable{
+    max-width: 754px;
+
 } 
 
+.productTableWraper_2collum{
+	min-width: 754px;
+}
+
+.productTableSum{
+	max-width: 250px;
+}
+
+.productTableWraper{
+	min-width: 754px;
+}
+
+.productTableName{
+	min-width: 754px;
+}
+.saleCardsProduct{
+	width: 291px;
+	height: 244px;
+	padding: 24px;
+}
+
+.saleInfoProduct__img{
+	width: 130px;
+	height: auto;
+}
+.buyButton{
+	width: 193px;
+	height: 50px;
+}
+
+.dataEntryCardWrapper{
+	width: 616px;
+}
+.dataEntryCardSection__input, .dataEntryCardSection__input_medium, .dataEntryCardSection__input_small, .dataEntryCardSection__input_half{
+	width: 260px;
+}
+.orderConfirmationCardWrapper{
+	width: 424px;
+	height: 371px;
+}
+
+.footer-inforegion {
+	max-width: 1096px;
+}
+
+}
 @media ( max-width: 1439px ) and ( min-width: 1240px ) {
+
+/* АКОД*/
+.section{
+	min-height: 720px;
+}
+
+.footer-inforegion{
+	max-width: 1048px;
+}
+.orderConfirmationCardWrapper{
+	width: 460px;
+    height: 372px;
+}
+.calculationOfDelivery{
+	width: 220px;
+}
+.dataEntryCardSection__input, .dataEntryCardSection__input_medium, .dataEntryCardSection__input_small, .dataEntryCardSection__input_half{
+	width: 220px;
+}
+.dataEntryCardWrapper {
+    width: 536px;
+}
+
+.productTableSum {
+    max-width: 234px;
+}
+.productTableWraper_2collum {
+    min-width: 717px;
+}
+.productTableWraper {
+    min-width: 717px;
+}
+.productTableName {
+    min-width: 717px;
+    display: flex;
+    justify-content: space-between;
+}
+.productTable {
+    max-width: 717px;
+}
+.saleInfoProduct__img {
+    width: 130px;
+    height: auto;
+}
+.buyButton {
+    width: 193px;
+    height: 50px;
+}
+.saleCardsProduct {
+    width: 291px;
+    height: 244px;
+    padding: 24px;
+}
+
+.termsOfPurchaseText {
+    width: 260px;
+}
+.termsOfPurchaseCard {
+    width: 300px;
+    height: 176px;
+    padding: 0;
+	display: flex;
+    justify-content: center;
+	margin-bottom: 46px;
+}
+.termsOfPurchaseCard__ico{
+	display: none;
+}
+.thumb-wrap {
+    max-width: 1048px;
+    max-height: 588px;
+}
+.infoSection{
+	max-width: 421px;
+}
+.infoCard__img {
+    width: 424px;
+}
+.infoCard_collumCenter{
+	width: 424px;
+	
+		display: flex;
+		justify-content: center;
+		
+		
+		flex-wrap: wrap;
+		flex-direction: column;
+		
+	
+}
+.lineData {
+    width: 336px;
+}
+.scheme {
+    width: 558px;
+}
+.infoCard {
+    max-width: 1048px;
+}
+.scheme__img {
+    height: 359px;
+}
+.productAdvantageCard__img {
+    width: 424px;
+}
+.productAdvantageCard{
+	max-width: 1048px;
+}
+
+.product-chair__img {
+    width: 410px;
+    height: auto;
+}
+.product-text{
+	margin-bottom: 40px;
+}
+.menu-start{
+	margin-right: 44px;
+}
+.menu-height, .menu-end{
+	width: 52px;
+}
+
+.menu-left{
+	width: 52px;
+}
+	.header-container{
+		max-width: 994px;
+	}
+	.product{
+		max-width: 1048px;
+	}
+	/* АКОД*/
+
 	.header__info {
 		font-size: 16px;
 		font-family: 'Montserrat';
@@ -2553,7 +2853,7 @@ height: 14px;
     font-weight: 400;
     font-size: 70px;
     color: #FF6B00;
-    line-height: 150px;
+    line-height: 90px;
 }
 .product-price {
     margin-bottom: 24px;
@@ -2565,7 +2865,7 @@ height: 14px;
     color: #FFFFFF;
 }
 .product-button {
-    padding: 24px 120px 24px 120px;
+    padding: 16px 80px 16px 80px;
     border: none;
     background-color: #FF6B00;
     font-family: 'Montserrat';
@@ -2574,7 +2874,7 @@ height: 14px;
     font-size: 12px;
     line-height: 20px;
     color: #FFFFFF;
-    width: 316px;
+    width: 217px;
     cursor: pointer;
 }
 .productAdvantageText__h {
@@ -2604,7 +2904,7 @@ height: 14px;
     line-height: 49px;
     color: white;
     text-decoration: none;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 .lineData__h {
     font-size: 13px;
@@ -2621,7 +2921,7 @@ height: 14px;
     font-weight: 400;
     line-height: 22px;
     color: white;
-    width: 291px;
+    width: 167px;
 }
 .info__p {
     font-size: 16px;
@@ -2813,10 +3113,10 @@ height: 14px;
     height: 68px;
     background: none;
     color: #FFFFFF;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 40px;
+    padding-left: 40px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -2921,6 +3221,171 @@ height: 14px;
 }
 
 @media ( max-width: 1239px ) and ( min-width: 905px ) {
+
+
+	
+/* АКОД*/
+.section{
+	min-height: 680px;
+}
+
+.saleCards {
+    display: flex;
+    width: 606px;
+    justify-content: space-between;
+}
+
+.pageIdentification{
+	min-width: 720px;
+}
+.footer-inforegion{
+	max-width: 770px;
+}
+.orderConfirmationCardWrapper{
+	width: 286px;
+    height: 409px;
+}
+.calculationOfDelivery{
+	width: 220px;
+}
+.dataEntryCardSection__input{
+	width: 384px;
+}
+
+.dataEntryCardSection__input_medium{
+    width: 296px;
+}
+.dataEntryCardSection__input_small{
+	width: 68px;
+}
+.dataEntryCardSection__input_half{
+	width: 172px;
+}
+
+.dataEntryCardWrapper {
+    width: 464px;
+}
+
+.productTableSum {
+    max-width: 234px;
+}
+.productTableWraper_2collum {
+    min-width: 717px;
+}
+.productTableWraper {
+    min-width: 717px;
+	margin-bottom: 16px;
+    margin-top: 16px;
+}
+.productTableName {
+    min-width: 717px;
+    display: flex;
+    justify-content: space-between;
+}
+.productTable {
+    max-width: 717px;
+}
+.saleInfoProduct__img {
+    width: 88px;
+    height: auto;
+}
+.buyButton {
+    width: 183px;
+    height: 44px;
+}
+.saleCardsProduct {
+    width: 291px;
+    height: 196px;
+    padding: 24px;
+}
+
+.termsOfPurchaseText {
+    width: 210px;
+}
+.termsOfPurchaseCard {
+    width: 368px;
+    height: 156px;
+    padding: 24px;
+	display: flex;
+    justify-content: space-between;
+	margin-bottom: 24px;
+}
+.termsOfPurchaseCard__ico{
+	display: block;
+	width: 78px;
+	height: 78px;
+}
+.thumb-wrap {
+    max-width: 770px;
+    max-height: 433px;
+}
+.infoSection{
+	max-width: 421px;
+}
+.infoCard__img {
+    width: 270px;
+}
+.infoCard_collumCenter{
+	width: 270px;
+	
+		display: flex;
+		justify-content: center;
+		
+		
+		flex-wrap: wrap;
+		flex-direction: column;
+		
+	
+}
+.lineData {
+    width: 270px;
+	margin-bottom: 20px;
+}
+.scheme {
+    width: 417px;
+}
+.infoCard {
+    max-width: 770px;
+}
+.scheme__img {
+    height: 280px;
+}
+.productAdvantageCard__img {
+    width: 270px;
+}
+
+.productAdvantageText {
+    width: 343px;
+}
+.productAdvantageCard{
+	max-width: 770px;
+}
+
+.product-chair__img {
+    width: 320px;
+    height: auto;
+}
+.product-text{
+	margin-bottom: 32px;
+}
+.menu-start{
+	margin-right: 44px;
+}
+.menu-height, .menu-end{
+	width: 52px;
+}
+
+.menu-left{
+	width: 52px;
+}
+	.header-container{
+		max-width: 770px;
+	}
+	.product{
+		max-width: 770px;
+	}
+	/* АКОД*/
+
 	.header__info {
 		font-size: 14px;
 		font-family: 'Montserrat';
@@ -2973,7 +3438,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 57px;
 		color: #FF6B00;
-		line-height: 150px;
+		line-height: 80px;
 	}
 
 	.product-price {
@@ -2996,7 +3461,7 @@ height: 14px;
 		font-size: 10px;
 		line-height: 12px;
 		color: #FFFFFF;
-		width: 316px;
+		width: 137px;
 		cursor: pointer;
 	}
 
@@ -3005,7 +3470,7 @@ height: 14px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
-		line-height: 49px;
+		line-height: 32px;
 		color: #1B1B1B;
 		text-decoration: none;
 		margin-bottom: 24px;
@@ -3048,7 +3513,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: white;
-		width: 291px;
+		width: 120px;
 	}
 
 	.info__p {
@@ -3243,10 +3708,10 @@ height: 14px;
 		height: 68px;
 		background: none;
 		color: #FFFFFF;
-		padding-top: 24px;
-		padding-bottom: 24px;
-		padding-right: 80px;
-		padding-left: 80px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-right: 44px;
+		padding-left: 44px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -3290,6 +3755,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 17px;
+		width: 83px;
 	}
 
 	.finalConditions__namber {
@@ -3336,6 +3802,7 @@ height: 14px;
 	}
 
 	.footer-tel {
+		width: 108px;
 		margin-bottom: 16px;
 		text-decoration: none;
 		font-size: 14px;
@@ -3364,6 +3831,11 @@ height: 14px;
 
 @media ( max-width: 904px ) and ( min-width: 600px ) {
 
+	.section{
+		min-height: 800px;
+	}
+	
+
 	.product-altrnt__text {
 		margin-bottom: 16px;
 		font-size: 9px;
@@ -3379,6 +3851,7 @@ height: 14px;
 		font-size: 14px;
 		line-height: 17px;
 		color: #BEBEBE;
+		text-align: center;
 	}
 
 	.product-header {
@@ -3387,6 +3860,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 37px;
 		color: white;
+		text-align: center;
 	}
 
 	.product-logo {
@@ -3395,7 +3869,7 @@ height: 14px;
 		font-weight: 400;
 		font-size: 57px;
 		color: #FF6B00;
-		line-height: 150px;
+		line-height: 68px;
 	}
 
 	.product-price {
@@ -3406,6 +3880,7 @@ height: 14px;
 		font-size: 25px;
 		line-height: 42px;
 		color: #FFFFFF;
+		text-align: center;
 	}
 
 	.product-button {
@@ -3418,7 +3893,7 @@ height: 14px;
 		font-size: 10px;
 		line-height: 12px;
 		color: #FFFFFF;
-		width: 316px;
+		width: 209px;
 		cursor: pointer;
 	}
 
@@ -3427,10 +3902,11 @@ height: 14px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 400;
-		line-height: 49px;
+		line-height: 32px;
 		color: #1B1B1B;
 		text-decoration: none;
 		margin-bottom: 24px;
+		text-align: center;
 	}
 
 	.productAdvantageText__note {
@@ -3441,6 +3917,7 @@ height: 14px;
 		line-height: 17px;
 		color: #707070;
 		text-decoration: none;
+		text-align: center;
 	}
 
 	.info__h {
@@ -3452,6 +3929,8 @@ height: 14px;
 		color: white;
 		text-decoration: none;
 		margin-bottom: 40px;
+		text-align: center;
+		width: 398px;
 	}
 
 	.lineData__h {
@@ -3470,7 +3949,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: white;
-		width: 291px;
+		width: 137px;
 	}
 
 	.info__p {
@@ -3509,6 +3988,7 @@ height: 14px;
 		font-weight: 400;
 		color: white;
 		margin-bottom: 8px;
+		text-align: center;
 	}
 
 	.aboutItem__text_nomargin {
@@ -3518,6 +3998,7 @@ height: 14px;
 		font-weight: 400;
 		line-height: 17px;
 		color: #BEBEBE;
+		text-align: center;
 	}
 
 	.infoCard__p {
@@ -3566,6 +4047,7 @@ height: 14px;
 		line-height: 17px;
 		color: white;
 		margin-top: 16px;
+		text-align: center;
 	}
 
 	.buyButton__text {
@@ -3586,6 +4068,18 @@ height: 14px;
 		font-size: 12px;
 		line-height: 24px;
 		text-align: center;
+		
+	}
+
+	
+	.productTableName__h:nth-child(2), .productTableName__h:nth-child(3), .productTableName__h:nth-child(5){
+		display: none;
+
+	}
+	.productTableName__h:nth-child(1){
+		display: block;
+		width: 196px;
+		text-align: left;
 	}
 
 	.productTablePosition__cost {
@@ -3596,6 +4090,7 @@ height: 14px;
 		font-size: 12px;
 		text-align: center;
 		width: 72px;
+		display: none;
 	}
 
 	.productTablePosition__color {
@@ -3608,6 +4103,7 @@ height: 14px;
 		width: 100%;
 		max-width: 104px;
 		text-align: center;
+		display: none;
 	}
 
 	.inputCount__input {
@@ -3661,14 +4157,14 @@ height: 14px;
 
 	.nextButton {
 		border: 1px solid #FFFFFF;
-		min-width: 224px;
+		width: 224px;
 		height: 68px;
 		background: none;
 		color: #FFFFFF;
-		padding-top: 24px;
-		padding-bottom: 24px;
-		padding-right: 80px;
-		padding-left: 80px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-right: 20px;
+		padding-left: 20px;
 		font-family: 'Montserrat';
 		font-style: normal;
 		font-weight: 500;
@@ -3773,6 +4269,229 @@ height: 14px;
 		cursor: pointer;
 		text-decoration: none;
 	}
+
+	
+	
+/* АКОД*/
+
+
+.saleCards {
+    display: flex;
+    width: 606px;
+    justify-content: space-between;
+}
+
+.pageIdentification{
+	min-width: 720px;
+}
+.footer-inforegion{
+	max-width: 398px;
+}
+.orderConfirmationCardWrapper{
+	width: 398px;
+	height: 365px;
+    margin-top: 20px;
+}
+.calculationOfDelivery{
+	width: 318px;
+}
+.dataEntryCardSection__input{
+	width: 318px;
+}
+
+.dataEntryCardSection__input_medium{
+    width: 230px;
+}
+.dataEntryCardSection__input_small{
+	width: 68px;
+}
+.dataEntryCardSection__input_half{
+	width: 149px;
+}
+
+.dataEntryCardWrapper {
+    width: 398px;
+}
+
+.productTableSum {
+    max-width: 100%;
+}
+.productTableWraper_2collum {
+    min-width: 398px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.productTableWraper {
+    min-width: 398px;
+	margin-bottom: 16px;
+    margin-top: 16px;
+}
+.productTableName {
+    width: 398px;
+    display: flex;
+    justify-content: space-between;
+}
+.productTable {
+    max-width: 398px;
+}
+.saleInfoProduct__img {
+    width: 88px;
+    height: auto;
+}
+.buyButton {
+    width: 135px;
+    height: 44px;
+}
+.saleCardsProduct {
+	width: 191px;
+    height: 279px;
+    padding: 24px;
+}
+
+.termsOfPurchaseText {
+    width: 143px;
+	margin-top: 16px;
+}
+.termsOfPurchaseCard {
+    width: 191px;
+    height: 265px;
+    padding: 24px;
+	display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+	align-items: flex-start;
+	margin-bottom: 24px;
+}
+.termsOfPurchaseCard__ico{
+	display: block;
+	width: 55px;
+	height: 55px;
+}
+.thumb-wrap {
+    max-width: 398px;
+    max-height: 224px;
+}
+.infoSection{
+	max-width: 421px;
+	justify-content: space-around;
+}
+.aboutIcon{
+	width: 33px;
+}
+.infoCard__img {
+    width: 398px;
+}
+.infoCard_collumCenter{
+	width: 270px;
+	
+		display: flex;
+		justify-content: center;
+		
+		
+		flex-wrap: wrap;
+		flex-direction: column;
+		
+	
+}
+.lineData {
+    width: 398px;
+	margin-bottom: 20px;
+}
+.lineData:last-child {
+	margin-bottom: 64px;
+}
+.scheme {
+    width: 417px;
+}
+.infoCard {
+    max-width: 398px;
+}
+.scheme__img {
+    height: 280px;
+}
+.productAdvantageCard__img {
+    width: 270px;
+	margin-top: 96px;
+}
+
+
+.productAdvantageText {
+    width: 358px;
+}
+.productAdvantageCard{
+	max-width: 398px;
+	flex-direction: column;
+}
+.column-reverse{
+	flex-direction: column-reverse;
+}
+
+.product-chair__img {
+    width: 320px;
+    height: auto;
+}
+.product-text{
+	margin-bottom: 32px;
+}
+.menu-start{
+	margin-right: 44px;
+}
+.menu-height, .menu-end{
+	width: 52px;
+}
+
+.menu-left{
+	width: 52px;
+}
+	.header-container{
+		max-width: 398px;
+	}
+	.product{
+		max-width: 398px;
+	}
+
+	.header-tel{
+		display: none;
+	}
+	.headerMenu{
+		display: block;
+	}
+
+	.product{
+		flex-direction: column;
+	}
+
+	.pageWrap{
+		height: calc(100vh - 200px);
+	}
+	.product-info {
+		margin-top: 32px;
+	}
+	.menuHref{
+		display: flex;
+		justify-content: center;
+	}
+
+	.aboutItem_colum {
+		width: 171px;
+	}
+
+	.footer{
+		display: none;
+	}
+
+	.saleInfoProduct {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+
+	.priceAndNameProduct__color{
+		text-align: center;
+	}
+	/* АКОД*/
+
 }
 
 @media ( max-width: 599px ) {
@@ -3990,7 +4709,9 @@ height: 14px;
 		color: white;
 		margin-left: 12px;
 	}
-
+	.productTableName__h:nth-child(1){
+		display: block;
+	}
 	.productTableName__h {
 		color: #BEBEBE;
 		font-family: 'Montserrat';
@@ -4177,5 +4898,3 @@ height: 14px;
 		text-decoration: none;
 	}
 }
-
-	
