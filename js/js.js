@@ -16,12 +16,12 @@ function stopPageScroll(){
 }
 
 	mainBuyButton = document.getElementById('mainBuyButton');
-	console.log(mainBuyButton);
+	
 		
 	
 	document.addEventListener('mousewheel', function(event) {
 		// останавливаем поведение по умолчанию, то есть прокрутку
-		//console.log(event);
+	
 		
 		
 	  });
@@ -53,7 +53,7 @@ function stopPageScroll(){
 		let menuTextAll = document.querySelectorAll('.menuText'); // выбрали все всплывающие подсказку в меню
 		let arrmenuTextAll = Array.from(menuTextAll); // сформировали из всплывающих пунктов массив
 
-		console.log(arrPointsMenu);
+		
 
 		arrPointsMenu.forEach(function(menuPoint, index) { // каждому пункту меню назначили событие
 
@@ -123,9 +123,9 @@ function stopPageScroll(){
             if (entry.isIntersecting) {// если элемент является наблюдаемым 
                 
 				let nextPage = arrScreensPages.findIndex(item => item.id == entry.target.id);
-				console.log(nextPage + ' перемотка');
+			
 				let scrollPage = entry.target.offsetHeight * nextPage;
-				console.log(scrollPage + ' перемотка2');
+				
 				if(scrollPageStatus == true){
 					window.scrollTo(0, scrollPage);	
 				}
@@ -135,13 +135,12 @@ function stopPageScroll(){
 				let targetMenuPointIndex = visibleScreen.dataset.screennamber;
 
 				let detectMenuPoint_active = arrPointsMenu[targetMenuPointIndex].classList.contains('menuPoint_active');  // активен ли пункт меню
-				console.log(detectMenuPoint_active);
-
+				
 				arrPointsMenu[targetMenuPointIndex].classList.add('menuPoint_active'); 
 				let upLineMenuIndex = Number(targetMenuPointIndex); // переменная для хранения индекса линии выше выбранного пункта меню
 				let downLineMenuIndex = Number(targetMenuPointIndex) + 1; // переменная для хранения индекса линии ниже выбранного пункта меню
 				arrlineMenu[upLineMenuIndex].classList.add('moveLine'); // добавляем класс наведения на линию
-				console.log(downLineMenuIndex);
+		
 				arrlineMenu[downLineMenuIndex].classList.add('moveLine');// добавляем класс наведения на линию 
 				arrPointsMenu[targetMenuPointIndex].childNodes[1].classList.add('menuPoint__inside_active'); 
 				
@@ -167,9 +166,7 @@ function stopPageScroll(){
 
 				
 
-				//console.log(visibleScreen.clientHeight);
-				console.log('наблюдаем ' + targetMenuPointIndex);
-				console.log('наблюдаем ' + visibleScreen.id);
+	
 				if(visibleScreen.id == 'b1' || visibleScreen.id == 'b2' || visibleScreen.id == 'b3' || visibleScreen.id == 'b4'){//меняем мобильное менюв зависимости от экранов
 					mobileMenuBurger.classList.add('headerMenu_black');
 					mobileLogo.classList.add('mobileLogo_black');
@@ -196,7 +193,7 @@ function stopPageScroll(){
 					
 					adjustmentStatusMenu = false;
 				}
-				console.log('hhhhhh ' + visibleScreen.dataset.screennamber)
+			
 				if(visibleScreen.dataset.screennamber == 7 && arrPointsMenu[7].classList.contains('menuPoint_active') == true ){
 					
 					adjustmentStatusMenu = false;
@@ -213,7 +210,7 @@ function stopPageScroll(){
 
 
 
-				console.log('вышел из наблюдения ' + visibleScreen.id);
+				
 			}
         })
     }, options)
@@ -242,7 +239,7 @@ mobileMenuContent__pointALL.forEach(function(item){
 	item.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
 		scrollPageStatus = false;
 		mobileMenu.style.display = 'none';
-		console.log(scrollPageStatus);
+		
 		
 		
 
@@ -252,7 +249,24 @@ mobileMenuContent__pointALL.forEach(function(item){
 	});
 });
 
+/*
+let wheelStatus =  { passive: false };
 
+window.addEventListener("wheel", scrollEventHandler, wheelStatus);
+function scrollEventHandler(event){
+	console.log('замечено ' + event);
+	console.log('wheelStatus ' + wheelStatus.passive);
+	if( wheelStatus.passive == true){
+		 wheelStatus.passive = false;
+		 console.log('1');
+		 
+	}
+	
+	event.preventDefault();
+
+
+}
+*/
 
 }; // конец window.onload
 

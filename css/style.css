@@ -10,8 +10,18 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+	
 }
-
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+body::-webkit-scrollbar {
+	display: none;
+  }
+   
+  /* Скрываем scrollbar для IE, Edge и Firefox */
+  body {
+	-ms-overflow-style: none;  /* IE и Edge */
+	scrollbar-width: none;  /* Firefox */
+  }
 .prelouder{
 	width: 100vw;
 	height: 100vh;
