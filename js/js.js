@@ -5,8 +5,15 @@ window.onload = function() {
 let prelouder = document.querySelector('.prelouder');
 prelouder.style.display = 'none';
 //прелоудер
+let mobileMenu = document.getElementById('mobileMenu'); // нашли мобильное меню
+let mobileMenuBurger = document.querySelector('.headerMenu'); //нашли бургер в мобильном меню
+let mobileLogo = document.querySelector('.mobileLogo'); //нашли логотип в мобильном меню
+let mobileMenuClose = document.getElementById('mobileMenuClose'); //нашли крестик в мобильном меню
+let mobileMenuContent__pointALL = document.querySelectorAll('.mobileMenuContent__point'); // нещли все пункты мобильного меню
 
-
+function stopPageScroll(){
+	scrollPageStatus = true;
+}
 
 	mainBuyButton = document.getElementById('mainBuyButton');
 	console.log(mainBuyButton);
@@ -14,7 +21,7 @@ prelouder.style.display = 'none';
 	
 	document.addEventListener('mousewheel', function(event) {
 		// останавливаем поведение по умолчанию, то есть прокрутку
-		console.log(event);
+		//console.log(event);
 		
 		
 	  });
@@ -163,6 +170,14 @@ prelouder.style.display = 'none';
 				//console.log(visibleScreen.clientHeight);
 				console.log('наблюдаем ' + targetMenuPointIndex);
 				console.log('наблюдаем ' + visibleScreen.id);
+				if(visibleScreen.id == 'b1' || visibleScreen.id == 'b2' || visibleScreen.id == 'b3' || visibleScreen.id == 'b4'){//меняем мобильное менюв зависимости от экранов
+					mobileMenuBurger.classList.add('headerMenu_black');
+					mobileLogo.classList.add('mobileLogo_black');
+					
+				} else{
+					mobileMenuBurger.classList.remove('headerMenu_black');
+					mobileLogo.classList.remove('mobileLogo_black');
+				}
 				
 				//window.scrollTo(0, 0);
 
@@ -210,6 +225,35 @@ prelouder.style.display = 'none';
     })
 
 document.getElementById('iframe').src="https://www.youtube.com/embed/5vkBznnmNwE";
+
+mobileMenuBurger.addEventListener("click", function(event){ // событие при клике на бургер
+	
+	mobileMenu.style.display = 'flex';
+
+});
+
+mobileMenuClose.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
+	
+	mobileMenu.style.display = 'none';
+
+});
+
+mobileMenuContent__pointALL.forEach(function(item){
+	item.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
+		scrollPageStatus = false;
+		mobileMenu.style.display = 'none';
+		console.log(scrollPageStatus);
+		
+		
+
+		
+		setTimeout(stopPageScroll, 1000);
+	
+	});
+});
+
+
+
 }; // конец window.onload
 
 
