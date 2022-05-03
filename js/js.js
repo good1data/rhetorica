@@ -127,6 +127,7 @@ function stopPageScroll(){
 				let scrollPage = entry.target.offsetHeight * nextPage;
 				
 				if(scrollPageStatus == true){
+					console.log(scrollPage);
 					window.scrollTo(0, scrollPage);	
 				}
 				
@@ -249,24 +250,25 @@ mobileMenuContent__pointALL.forEach(function(item){
 	});
 });
 
-/*
+// предотвращаем прокрутку
 let wheelStatus =  { passive: false };
 
 window.addEventListener("wheel", scrollEventHandler, wheelStatus);
 function scrollEventHandler(event){
-	console.log('замечено ' + event);
-	console.log('wheelStatus ' + wheelStatus.passive);
-	if( wheelStatus.passive == true){
-		 wheelStatus.passive = false;
-		 console.log('1');
-		 
-	}
-	
 	event.preventDefault();
-
-
 }
-*/
+//отслеживаем направление прокрутки
+window.addEventListener('wheel', function (e) {
+    //TODO add delay
+    if (e.deltaY < 0) {
+      //scroll wheel up
+      console.log("up");
+    }
+    if (e.deltaY > 0) {
+      //scroll wheel down
+      console.log("down");
+    }
+  });
 
 }; // конец window.onload
 

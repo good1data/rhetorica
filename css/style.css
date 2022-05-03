@@ -1181,7 +1181,7 @@ border-radius: 0px 160px 0px 0px;
 .pageIdentificationMain{
 
 	position: absolute; 
-	z-index: 0; 
+	z-index: 11110; 
 	
 }
 .pageIdentification{
@@ -5395,7 +5395,8 @@ display: none;
 }
 
 .sectionEND{
-	height: 200vh;
+	position: relative;
+	height: 880px;
 }
 
 .header{
@@ -5427,3 +5428,9 @@ margin: 8px;
 	/* АКОД*/
 
 }
+
+
+@media (orientation: landscape), (min-width: 600px) {
+
+    
+  }
