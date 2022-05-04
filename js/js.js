@@ -124,11 +124,18 @@ function stopPageScroll(){
                 
 				let nextPage = arrScreensPages.findIndex(item => item.id == entry.target.id);
 			
-				let scrollPage = entry.target.offsetHeight * nextPage;
+				//let scrollPage = entry.target.offsetHeight * nextPage;
+				let scrollPage = entry.target;
 				
 				if(scrollPageStatus == true){
-					console.log(scrollPage);
-					window.scrollTo(0, scrollPage);	
+					console.log('Следующая страница ' + nextPage);
+					nexElemNav = document.getElementById('b' + nextPage);
+
+					let top = nexElemNav.getBoundingClientRect().top + window.pageYOffset;
+					console.log('абсолют У ' + top);
+					console.log('текущая прокрутка ' + window.pageYOffset);
+					window.scrollTo(0, top);
+			
 				}
 				
 				
@@ -225,14 +232,16 @@ function stopPageScroll(){
 document.getElementById('iframe').src="https://www.youtube.com/embed/5vkBznnmNwE";
 
 mobileMenuBurger.addEventListener("click", function(event){ // событие при клике на бургер
-	
+			
 	mobileMenu.style.display = 'flex';
 
 });
 
 mobileMenuClose.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
-	
+	console.log('hi');
 	mobileMenu.style.display = 'none';
+	scrollPageStatus = false; // тест убрать в релизе
+	window.location.hash = '#rrr'; // тест убрать в релизе
 
 });
 
@@ -240,16 +249,34 @@ mobileMenuContent__pointALL.forEach(function(item){
 	item.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
 		scrollPageStatus = false;
 		mobileMenu.style.display = 'none';
-		
-		
-		
-
-		
 		setTimeout(stopPageScroll, 1000);
 	
 	});
 });
 
+
+
+// предотвращаем прокрутку 2
+function playWheel(){
+	wheelStatus = true;
+	body.style.overflow = '';
+}
+let body = document.getElementById('body');
+console.log(body);
+let wheelStatus = true;
+window.addEventListener('wheel', scrollWheel);
+function scrollWheel(){
+	console.log(4444);
+	if(wheelStatus == true){
+		
+		body.style.overflow = 'hidden';
+		wheelStatus = false;
+		setTimeout(playWheel, 500);
+	}
+}
+
+
+/*overflow-y: hidden;
 // предотвращаем прокрутку
 let wheelStatus =  { passive: false };
 
@@ -269,7 +296,7 @@ window.addEventListener('wheel', function (e) {
       console.log("down");
     }
   });
-
+*/
 }; // конец window.onload
 
 

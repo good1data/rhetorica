@@ -11,6 +11,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
 	
+	
 }
 /* Скрываем scrollbar для Chrome, Safari и Opera */
 body::-webkit-scrollbar {
@@ -2207,7 +2208,7 @@ height: 14px;
 
 
 
-@media ( max-width: 1919px ) and ( min-width: 1440px ) {
+@media ( max-width: 1919px ) and ( min-width: 1440px ) and (min-height: 820px) {
 
 	.product{
 		max-width: 1096px
