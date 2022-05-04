@@ -30,6 +30,7 @@ body::-webkit-scrollbar {
 	position: fixed;
 	z-index: 1000;
 	display: block;
+	padding: 40px;
 }
 
 .mobileMenuWrapper{
@@ -73,6 +74,10 @@ body::-webkit-scrollbar {
 	font-display: swap;
  
 }
+
+
+
+
 .header_mobile{
 	display: none;
     justify-content: center;
@@ -352,40 +357,6 @@ body::-webkit-scrollbar {
     color: #BEBEBE;
 }
 
-
-/* ПЕРЕКЛЮЧАТЕЛЬ */
-/* создание в label псевдоэлемента  before со следующими стилями */
-
-/*
-.product-btn__ellips1 {
-    margin-bottom: 16px;
-    background-color: #773118;
-    border-radius: 100%;
-    border: 1px solid #B5B5B5
-    width: 33px;
-    height: 33px;
-	cursor: pointer;
-	
-}
-
-.product-btn__ellips2 {
-    background-color: #FFFFFF;
-    border-radius: 100%;
-    border: 1px solid #B5B5B5
-    width: 33px;
-    height: 33px;
-	
-	cursor: pointer;
-}
-
- стили при наведении курсора на радио 
-.product-btn__ellips1 input:checked {
-    background-color: #9bfc00;
-  }
-*/
-/* 
-скаченные стили
-*/
 .form_toggle { /* product-btn */
 	display: flex;
     flex-direction: column;
@@ -444,47 +415,6 @@ body::-webkit-scrollbar {
 }
 
 
-/*
-.product-btn__ellips1:focus {
-	background-color: #773118;
-	border: #B5B5B5;
-}
-
-.product-btn__ellips1:hover {
-	background-color: #A0614A;
-	border: #B5B5B5;
-}
-
-.product-btn__ellips1:active {
-	background-color: #773118;
-	border: #FF6B00;
-}
-
-.inputChairСolor+label:hover::before {
-    border-color: #B5B5B5;
-	background-color: #A0614A;
-}
-
-
-
-
-.product-btn__ellips2:focus {
-	background-color: #FFFFFF;
-	border: #B5B5B5;
-}
-
-.product-btn__ellips2:hover {
-	background-color: #CACACA;
-	border: #B5B5B5;
-}
-
-.product-btn__ellips2:active {
-	background-color: #FFFFFF;
-	border: #FF6B00;
-}
-*/
-
-/* ПЕРЕКЛЮЧАТЕЛЬ */
 
 .product-btn {
     display: flex;
@@ -667,12 +597,13 @@ body::-webkit-scrollbar {
 
 .section{
 	height: 100vh;
-
-	 
-	
 	width: 100%;
 	position: sticky;
 	z-index: 1;
+}
+.sectionEND{
+	position: relative;
+	min-height: 1200px;
 }
 
 .moveArrow{
@@ -1182,7 +1113,7 @@ border-radius: 0px 160px 0px 0px;
 .pageIdentificationMain{
 
 	position: absolute; 
-	z-index: 11110; 
+	
 	
 }
 .pageIdentification{
@@ -1457,8 +1388,22 @@ line-height: 20px;
 	width: 926px;
 	display: flex;
 	justify-content: space-between;
-	    
-	
+	height: 20px;
+}
+.productTableName__h:nth-child(2) {
+	width: 196px;
+}
+.productTableName__h:nth-child(3) {
+	width: 104px;
+}
+.productTableName__h:nth-child(4) {
+	width: 88px;
+}
+.productTableName__h:nth-child(5) {
+	width: 72px;
+}
+.productTableName__h:nth-child(6) {
+	width: 20px;
 }
 .productTableWraper{
 		border-bottom: 1px solid #565656;
@@ -2206,10 +2151,15 @@ height: 14px;
 	width: 100%;
 }
 
+/*1920+ START*/
 
+/*1920+ END*/
 
-@media ( max-width: 1919px ) and ( min-width: 1440px ) and (min-height: 820px) {
-
+@media ( max-width: 1919px ) and ( min-width: 1440px ) {
+	.sectionEND {
+    
+		min-height: 1020px;
+	}
 	.product{
 		max-width: 1096px
 	}
@@ -2723,7 +2673,23 @@ height: 14px;
 }
 
 .productTableName{
-	min-width: 754px;
+	width: 754px;
+	height: 20px;
+}
+.productTableName__h:nth-child(2) {
+	width: 196px;
+}
+.productTableName__h:nth-child(3) {
+	width: 104px;
+}
+.productTableName__h:nth-child(4) {
+	width: 88px;
+}
+.productTableName__h:nth-child(5) {
+	width: 72px;
+}
+.productTableName__h:nth-child(6) {
+	width: 20px;
 }
 .saleCardsProduct{
 	width: 291px;
@@ -2756,10 +2722,14 @@ height: 14px;
 }
 
 }
+
 @media ( max-width: 1439px ) and ( min-width: 1240px ) {
 
 /* АКОД*/
-
+.sectionEND {
+    
+    min-height: 1000px;
+}
 
 .footer-inforegion{
 	max-width: 1048px;
@@ -2788,9 +2758,25 @@ height: 14px;
     min-width: 717px;
 }
 .productTableName {
-    min-width: 717px;
+    width: 717px;
     display: flex;
     justify-content: space-between;
+	height: 20px;
+}
+.productTableName__h:nth-child(2) {
+	width: 196px;
+}
+.productTableName__h:nth-child(3) {
+	width: 104px;
+}
+.productTableName__h:nth-child(4) {
+	width: 88px;
+}
+.productTableName__h:nth-child(5) {
+	width: 72px;
+}
+.productTableName__h:nth-child(6) {
+	width: 20px;
 }
 .productTable {
     max-width: 717px;
@@ -3307,7 +3293,10 @@ height: 14px;
 
 	
 /* АКОД*/
-
+.sectionEND {
+    position: relative;
+    min-height: 1040px;
+}
 
 .saleCards {
     display: flex;
@@ -3356,9 +3345,10 @@ height: 14px;
     margin-top: 16px;
 }
 .productTableName {
-    min-width: 717px;
+    width: 717px;
     display: flex;
     justify-content: space-between;
+	height: 20px;
 }
 .productTable {
     max-width: 717px;
@@ -3708,6 +3698,21 @@ height: 14px;
 		line-height: 24px;
 		text-align: center;
 	}
+	.productTableName__h:nth-child(2) {
+		width: 196px;
+	}
+	.productTableName__h:nth-child(3) {
+		width: 104px;
+	}
+	.productTableName__h:nth-child(4) {
+		width: 88px;
+	}
+	.productTableName__h:nth-child(5) {
+		width: 72px;
+	}
+	.productTableName__h:nth-child(6) {
+		width: 20px;
+	}
 
 	.productTablePosition__cost {
 		color: white;
@@ -3909,7 +3914,10 @@ height: 14px;
 
 @media ( max-width: 904px ) and ( min-width: 600px ) {
 
-
+	.sectionEND {
+		
+		min-height: 1080px;
+	}
 	
 
 	.product-altrnt__text {
@@ -4154,8 +4162,9 @@ height: 14px;
 	}
 	.productTableName__h:nth-child(1){
 		display: block;
-		width: 196px;
+		width: 219px;
 		text-align: left;
+		font-size: 12px;
 	}
 
 	.productTablePosition__cost {
@@ -4404,6 +4413,7 @@ height: 14px;
     width: 398px;
     display: flex;
     justify-content: space-between;
+	height: 20px;
 }
 .productTable {
     max-width: 398px;
@@ -4525,7 +4535,8 @@ height: 14px;
 	width: 52px;
 }
 	.header-container{
-		max-width: 398px;
+		margin-right: 68px;
+    margin-left: 68px;
 	}
 	.product{
 		max-width: 398px;
@@ -5193,8 +5204,8 @@ display: none;
 	display: none;
 }
 	.header-container{
-		max-width: 296px;
-		height: 42px;
+		margin-right: 16px;
+    margin-left: 16px;
 		height: 28px;
 	}
 	.product{
@@ -5397,7 +5408,7 @@ display: none;
 
 .sectionEND{
 	position: relative;
-	height: 880px;
+	min-height: 880px;
 }
 
 .header{
@@ -5431,7 +5442,4 @@ margin: 8px;
 }
 
 
-@media (orientation: landscape), (min-width: 600px) {
 
-    
-  }
