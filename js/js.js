@@ -128,12 +128,11 @@ function stopPageScroll(){
 				let scrollPage = entry.target;
 				
 				if(scrollPageStatus == true){
-					console.log('Следующая страница ' + nextPage);
+					
 					nexElemNav = document.getElementById('b' + nextPage);
 
 					let top = nexElemNav.getBoundingClientRect().top + window.pageYOffset;
-					console.log('абсолют У ' + top);
-					console.log('текущая прокрутка ' + window.pageYOffset);
+					
 					window.scrollTo(0, top);
 			
 				}
@@ -238,10 +237,9 @@ mobileMenuBurger.addEventListener("click", function(event){ // событие п
 });
 
 mobileMenuClose.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
-	console.log('hi');
+	
 	mobileMenu.style.display = 'none';
-	scrollPageStatus = false; // тест убрать в релизе
-	window.location.hash = '#rrr'; // тест убрать в релизе
+
 
 });
 
@@ -262,11 +260,11 @@ function playWheel(){
 	body.style.overflow = '';
 }
 let body = document.getElementById('body');
-console.log(body);
+
 let wheelStatus = true;
 window.addEventListener('wheel', scrollWheel);
 function scrollWheel(){
-	console.log(4444);
+	
 	if(wheelStatus == true){
 		
 		body.style.overflow = 'hidden';
@@ -276,27 +274,36 @@ function scrollWheel(){
 }
 
 
-/*overflow-y: hidden;
-// предотвращаем прокрутку
-let wheelStatus =  { passive: false };
+/* переключение кресла на главной START*/
 
-window.addEventListener("wheel", scrollEventHandler, wheelStatus);
-function scrollEventHandler(event){
-	event.preventDefault();
+let chairBrownButton = document.getElementById('chairBrown');
+let chairWhiteButton = document.getElementById('chairWhite');
+let productChairImg = document.querySelector('.product-chair__img');
+
+chairBrownButton.addEventListener('click', changesColorChair);
+chairWhiteButton.addEventListener('click', changesColorChair);
+
+function changesColorChair(){
+	
+	let idChair = this.id;
+	
 }
-//отслеживаем направление прокрутки
-window.addEventListener('wheel', function (e) {
-    //TODO add delay
-    if (e.deltaY < 0) {
-      //scroll wheel up
-      console.log("up");
-    }
-    if (e.deltaY > 0) {
-      //scroll wheel down
-      console.log("down");
-    }
-  });
-*/
+
+function changesColorChair(){
+	
+	let idChair = this.id;
+	
+	if (idChair == 'chairBrown'){
+		productChairImg.src = 'img/main/kreslo.png';
+	} else if(idChair == 'chairWhite'){
+		productChairImg.src = 'img/main/kreslo_bel.png';
+	}
+}
+
+
+/* переключение кресла на главной END*/
+
+
 }; // конец window.onload
 
 

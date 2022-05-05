@@ -2061,20 +2061,20 @@ height: 14px;
 
 .end-info-buy {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .end-info__delivery {
 	display: flex;
-	flex-direction: column;
+	
 }
 
 .end-info__deliverytext {
 	margin-bottom: 24px;
 	font-size: 14px;
 	line-height: 24px;
-	font-size: 'Montserrat';
-	width: 229px;
+	font-family: 'Montserrat';
+	
 	color: #FFFFFF;
 }
 
@@ -2087,7 +2087,7 @@ height: 14px;
 
 .end-info__adress {
 	display: flex;
-	flex-direction: column;
+	
 }
 
 .end-info__adresshouse {
@@ -2095,7 +2095,7 @@ height: 14px;
 	font-size: 16px;
 	line-height: 20px;
 	font-size: 'Montserrat';
-	width: 256px;
+	
 	color: #FFFFFF;
 	font-style: normal;
 	font-weight: bold;
@@ -4119,7 +4119,7 @@ height: 14px;
 	}
 	
 	.end-info {
-		padding: 40px 155px 40px 40px;
+		padding: 40px;
 		
 		background-color: #323232;
 		background-image: url(../img/background_end.png);
@@ -4161,20 +4161,21 @@ height: 14px;
 	
 	.end-info-buy {
 		display: flex;
-		flex-direction: row;
+		
 	}
 	
 	.end-info__delivery {
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
+		
 	}
 	
 	.end-info__deliverytext {
 		margin-bottom: 24px;
 		font-size: 14px;
 		line-height: 24px;
-		font-size: 'Montserrat';
-		width: 229px;
+	
+		
 		color: #FFFFFF;
 	}
 	
@@ -4187,7 +4188,8 @@ height: 14px;
 	
 	.end-info__adress {
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
+		
 	}
 	
 	.end-info__adresshouse {
@@ -4195,7 +4197,7 @@ height: 14px;
 		font-size: 16px;
 		line-height: 20px;
 		font-size: 'Montserrat';
-		width: 256px;
+		
 		color: #FFFFFF;
 		font-style: normal;
 		font-weight: bold;
@@ -7544,6 +7546,61 @@ margin: 8px;
 
 }
 
+@media /*WIN PAGE*/ ( max-width: 1919px ){
+	.infoCardW{
+		max-width: 320px;
+	}
+	.pageWrapW{
+		height: 100%;
+	}
+	.end-area {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		height: auto;
+	}
+	.end-info {
+		padding: 20px 20px 20px 20px;
+		background-color: #323232;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		width: 320px;
+		margin-bottom: 40px;
+		
+	}
+	.end-info__delivery {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.end-info__adress {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.end-info__deliverytext{
+		margin-bottom: 0;
+	}
+	.end-info__deliverytext{
+		text-align: center;
+	}
+	.end-info__adresshouse{
+		text-align: center;
+	}
+	.end-info__strong{
+		text-align: center;
+	}
+
+	.end-question{
+		padding: 40px;
+		width: 320px;
+		height: auto;
+	}
+	.end-question-text{
+		width: auto;
+	}
+}
 
 @media /*ERROR*/ /*1*/( max-height: 479px )/*1*/{ /* НЕРАБОЧИЙ ЭКРАН */
 	.noWorcScreen{
