@@ -37,8 +37,21 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+.model3dBG{
+	width: 100%; 
+	height: 100vw; 
+	background-color: aqua; 
+	position: relative; 
+	top: 0%;
+	position: absolute;
+}
 
-
+#advantagesScreen{
+	top: 0;
+}
+.productAdvantageCard{
+	z-index: 2;
+}
 @font-face {
 	font-family: "Montserrat";
 	src: url("../fonts/Montserrat-Regular.woff") format("woff");
@@ -307,7 +320,7 @@ body::-webkit-scrollbar {
 	display: flex; 
 	justify-content: center; 
 	align-items: center;
-	background-color: white; 
+	
 	height: 100vh; 
 
 }
@@ -338,6 +351,13 @@ body::-webkit-scrollbar {
 
 .product-chair__img {
     cursor: url("../img/cursor360_96x52_03.cur"), all-scroll;
+	width: 512px;
+	height: 680px;
+	background-image: url(../img/model3drotate/b/chairB0.png);
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
 }
 
 .product-object {
@@ -2407,7 +2427,7 @@ height: 14px;
 		display: flex; 
 		justify-content: center; 
 		align-items: center;
-		background-color: white; 
+		
 		height: 100vh; 
 	
 	}
@@ -2438,6 +2458,12 @@ height: 14px;
 	
 	.product-chair__img {
 		cursor: url("../img/cursor360_96x52_03.cur"), all-scroll;
+		width: 512px;
+		height: 680px;
+		background-image: url(../img/model3drotate/b/chairB0.png);
+		background-position: center center;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 	
 	.product-object {
@@ -4268,7 +4294,7 @@ height: 14px;
 	}
 	.product-chair__img{
 		width: 410px;
-		height: auto;
+		height: 545px;
 	}
 	.header__info {
 		font-size: 16px;
@@ -4955,7 +4981,7 @@ height: 14px;
 
 .product-chair__img {
     width: 410px;
-    height: auto;
+    height: 545px;
 }
 .product-text{
 	margin-bottom: 40px;
@@ -5534,7 +5560,7 @@ height: 14px;
 
 .product-chair__img {
     width: 320px;
-    height: auto;
+    height: 425px;
 }
 .product-text{
 	margin-bottom: 32px;
@@ -6622,7 +6648,7 @@ height: 14px;
 
 .product-chair__img {
     width: 320px;
-    height: auto;
+    height: 425px;
 }
 .product-text{
 	margin-bottom: 32px;
@@ -7280,7 +7306,7 @@ display: none;
 
 .product-chair__img {
     width: 122px;
-    height: auto;
+    height: 162px;
 }
 .product-text{
 	margin-bottom: 2px;

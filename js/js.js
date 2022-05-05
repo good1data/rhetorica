@@ -276,6 +276,11 @@ function scrollWheel(){
 
 /* переключение кресла на главной START*/
 
+
+
+
+/*
+
 let chairBrownButton = document.getElementById('chairBrown');
 let chairWhiteButton = document.getElementById('chairWhite');
 let productChairImg = document.querySelector('.product-chair__img');
@@ -300,9 +305,42 @@ function changesColorChair(){
 	}
 }
 
+*/
+
+for(let i = 0; i < 240; i++){// подгружаем фотки кресел
+	let imgB = document.createElement('img');
+	imgB.src = 'img/model3drotate/b/chairB' + i + '.png';
+	
+	
+}
+let container3DRotation = document.querySelector('.product-chair__img'); // нашли контейнер где будем вращать
+let count3dImage = 0; //создали переменную для хранения номера используемого изображения
+let playStatusCount3dImage; //создали переменную для хранения состояния проигрывания
+function image3DRotationPlay(){ // функция вращения
+	
+	if(count3dImage == 239){ 
+		count3dImage = (-1);
+	}
+	count3dImage = count3dImage + 1;
+	container3DRotation.style.backgroundImage = 'url(img/model3drotate/b/chairB' + count3dImage + '.png)';
+}
+
+function playCount3dImage(){
+	console.log(document.images)
+	//setInterval(image3DRotationPlay, 30);
+}
+
+container3DRotation.addEventListener("mousedown", playCount3dImage);
 
 /* переключение кресла на главной END*/
 
+
+/* Проигрывание 3д модели START 
+window.addEventListener('scroll', model3dMove);
+function model3dMove(){
+	console.log(window.pageYOffset);
+};*/
+/* Проигрывание 3д модели END */
 
 }; // конец window.onload
 
