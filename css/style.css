@@ -23,6 +23,12 @@ body::-webkit-scrollbar {
 	-ms-overflow-style: none;  /* IE и Edge */
 	scrollbar-width: none;  /* Firefox */
   }
+#formBuy{
+	display: none;
+};
+#b13{
+	display: none;
+}
 .prelouder{
 	width: 100vw;
 	height: 100vh;

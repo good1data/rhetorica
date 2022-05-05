@@ -303,6 +303,17 @@ function changesColorChair(){
 
 /* переключение кресла на главной END*/
 
+/* ссылка на форму заказа START*/
+let nextButton = document.querySelector('.nextButton');
+let formBuy = document.getElementById('formBuy');
+let b13 = document.getElementById('b13');
+function formBuyVisible(){
+	b13.style.display = 'block';
+	formBuy.style.display = 'block';
+}
+nextButton.addEventListener('click', formBuyVisible);
+/* ссылка на форму заказа END*/
+
 
 }; // конец window.onload
 
