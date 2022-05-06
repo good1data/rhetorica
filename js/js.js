@@ -265,13 +265,14 @@ let body = document.getElementById('body');
 
 let wheelStatus = true;
 window.addEventListener('wheel', scrollWheel);
+window.addEventListener('touchmove', scrollWheel);
 function scrollWheel(){
 	
 	if(wheelStatus == true){
 		
 		body.style.overflow = 'hidden';
 		wheelStatus = false;
-		setTimeout(playWheel, 500);
+		setTimeout(playWheel, 1000);
 	}
 }
 
