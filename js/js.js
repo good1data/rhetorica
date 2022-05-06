@@ -326,8 +326,8 @@ function image3DRotationPlay(){ // функция вращения
 }
 
 function playCount3dImage(){
-	console.log(document.images)
-	//setInterval(image3DRotationPlay, 30);
+	
+	setInterval(image3DRotationPlay, 30);
 }
 
 container3DRotation.addEventListener("mousedown", playCount3dImage);
