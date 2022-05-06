@@ -111,7 +111,7 @@ function stopPageScroll(){
         // без отступов
         rootMargin: '0px',
         // процент пересечения - половина изображения
-        threshold: 0.01
+        threshold: 0.001
     }
 
     // создаем наблюдатель
@@ -249,7 +249,7 @@ mobileMenuContent__pointALL.forEach(function(item){
 	item.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
 		scrollPageStatus = false;
 		mobileMenu.style.display = 'none';
-		setTimeout(stopPageScroll, 1000);
+		setTimeout(stopPageScroll, 250);
 	
 	});
 });
@@ -272,7 +272,7 @@ function scrollWheel(){
 		
 		body.style.overflow = 'hidden';
 		wheelStatus = false;
-		setTimeout(playWheel, 1000);
+		setTimeout(playWheel, 250);
 	}
 }
 
