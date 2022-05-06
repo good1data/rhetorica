@@ -306,6 +306,10 @@ function changesColorChair(){
 }
 
 */
+/* переключение кресла на главной END*/
+
+
+/* Вращение 3д модели START */
 
 for(let i = 0; i < 240; i++){// подгружаем фотки кресел
 	let imgB = document.createElement('img');
@@ -315,7 +319,12 @@ for(let i = 0; i < 240; i++){// подгружаем фотки кресел
 }
 let container3DRotation = document.querySelector('.product-chair__img'); // нашли контейнер где будем вращать
 let count3dImage = 0; //создали переменную для хранения номера используемого изображения
-let playStatusCount3dImage; //создали переменную для хранения состояния проигрывания
+let playStatusCount3dImage = false; //создали переменную для хранения состояния проигрывания
+let moveArrow__left = document.getElementById('moveArrow__left'); //нашли левую стрелку
+let moveArrow__right = document.getElementById('moveArrow__right');//нашли правую стрелку
+
+
+
 function image3DRotationPlay(){ // функция вращения
 	
 	if(count3dImage == 239){ 
@@ -326,20 +335,23 @@ function image3DRotationPlay(){ // функция вращения
 }
 
 function playCount3dImage(){
+	playStatusCount3dImage = true;
+	let setInterval3DRotation = setInterval(image3DRotationPlay, 30);
 	
-	setInterval(image3DRotationPlay, 30);
 }
 
-container3DRotation.addEventListener("mousedown", playCount3dImage);
+moveArrow__left.addEventListener("mousedown", playCount3dImage);
 
-/* переключение кресла на главной END*/
+/* Вращение 3д модели END */
 
 
-/* Проигрывание 3д модели START 
+/* Проигрывание 3д модели START */
+
 window.addEventListener('scroll', model3dMove);
 function model3dMove(){
 	console.log(window.pageYOffset);
-};*/
+};
+
 /* Проигрывание 3д модели END */
 
 }; // конец window.onload
