@@ -233,12 +233,14 @@ document.getElementById('iframe').src="https://www.youtube.com/embed/5vkBznnmNwE
 mobileMenuBurger.addEventListener("click", function(event){ // событие при клике на бургер
 			
 	mobileMenu.style.display = 'flex';
+	body.style.overflow = 'hidden';
 
 });
 
 mobileMenuClose.addEventListener("click", function(event){ // событие при клике на крестик в мобильном меню
 	
 	mobileMenu.style.display = 'none';
+	body.style.overflow = '';
 
 
 });
