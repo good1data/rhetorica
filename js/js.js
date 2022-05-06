@@ -5,6 +5,15 @@ window.onload = function() {
 let prelouder = document.querySelector('.prelouder');
 prelouder.style.display = 'none';
 //прелоудер
+
+/* Определение типа устройства  START*/
+let device = navigator.userAgent;
+let diviseMobileStatus = false;
+if(device.match('iPhone') || device.match('Android') || device.match('iPad')){
+	diviseMobileStatus = true;
+}
+/* Определение типа устройства  END*/
+
 let mobileMenu = document.getElementById('mobileMenu'); // нашли мобильное меню
 let mobileMenuBurger = document.querySelector('.headerMenu'); //нашли бургер в мобильном меню
 let mobileLogo = document.querySelector('.mobileLogo'); //нашли логотип в мобильном меню
@@ -132,8 +141,10 @@ function stopPageScroll(){
 					nexElemNav = document.getElementById('b' + nextPage);
 
 					let top = nexElemNav.getBoundingClientRect().top + window.pageYOffset;
+					if(diviseMobileStatus == false){
+						window.scrollTo(0, top);
+					}
 					
-					window.scrollTo(0, top);
 			
 				}
 				
@@ -269,8 +280,10 @@ window.addEventListener('touchmove', scrollWheel);
 function scrollWheel(){
 	
 	if(wheelStatus == true){
+		if(diviseMobileStatus == false){
+			body.style.overflow = 'hidden';
+		}
 		
-		body.style.overflow = 'hidden';
 		wheelStatus = false;
 		setTimeout(playWheel, 250);
 	}
