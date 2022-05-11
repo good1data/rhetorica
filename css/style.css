@@ -7519,7 +7519,7 @@ display: none;
 
 .sectionEND{
 	position: relative;
-	min-height: 940px;
+	height: 940px;
 	display: none;
 }
 
