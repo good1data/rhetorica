@@ -312,36 +312,139 @@ function changesColorChair(){
 /* Вращение 3д модели START */
 
 for(let i = 0; i < 240; i++){// подгружаем фотки кресел
-	let imgB = document.createElement('img');
-	imgB.src = 'img/model3drotate/b/chairB' + i + '.png';
+	//let imgB = document.createElement('img');
+	//imgB.src = 'img/model3drotate/b/chairB' + i + '.png';
+	let link = document.createElement('link');
+	link.rel = "prefetch prerender";
+	link.href = 'img/model3drotate/b/chairB' + i + '.png';
+
 	
+	document.body.append(link);
 	
 }
+
+
 let container3DRotation = document.querySelector('.product-chair__img'); // нашли контейнер где будем вращать
 let count3dImage = 0; //создали переменную для хранения номера используемого изображения
-let playStatusCount3dImage = false; //создали переменную для хранения состояния проигрывания
-let moveArrow__left = document.getElementById('moveArrow__left'); //нашли левую стрелку
-let moveArrow__right = document.getElementById('moveArrow__right');//нашли правую стрелку
+let playStatusCount3dImage = false; //создали переменную для хранения состояния проигрывания МОЖНО УДАЛИТЬ
+let moveArrow__nav = document.querySelectorAll('.moveArrow-nav'); //нашли все стрелки
+let setInterval3DRotation // переменная для хранения функции вращения
+let direction3DRotation; // направление вращения 
+// переменные для перекл.чения цвета 
+let chairBrownButton = document.getElementById('chairBrown'); // кнопка картчнегого цвета
+let chairWhiteButton = document.getElementById('chairWhite'); // кнопка белого цвета
+let chairColor = 'b/chairB'; // цвет кресла при загрузке
 
+
+
+
+
+chairBrownButton.addEventListener('click', changesColorChair); // выбрали цвет кресла
+chairWhiteButton.addEventListener('click', changesColorChair); // выбрали цвет кресла
+
+
+
+
+function changesColorChair(){
+	
+	let idChair = this.id;
+	
+	if (idChair == 'chairBrown'){
+		chairColor = 'b/chairB';
+		
+	} else if(idChair == 'chairWhite'){
+		chairColor = 'w/chairW';
+	}
+	container3DRotation.style.backgroundImage = 'url(img/model3drotate/' + chairColor + count3dImage + '.png)';
+}
+
+console.log(moveArrow__nav);
+moveArrow__nav.forEach( function(item){
+	console.log(item);
+	
+	item.addEventListener('mousedown', playCount3dImage);
+	item.addEventListener("mouseout", stopCount3dImage);
+	item.addEventListener("mouseup", stopCount3dImage);
+});
 
 
 function image3DRotationPlay(){ // функция вращения
-	
-	if(count3dImage == 239){ 
-		count3dImage = (-1);
+	console.log('!@#');
+	if(direction3DRotation == 'moveArrow__left'){
+		if(count3dImage == 239){ 
+				count3dImage = (-1);
+			}
+			count3dImage = count3dImage + 1;
+			container3DRotation.style.backgroundImage = 'url(img/model3drotate/' + chairColor + count3dImage + '.png)';
+			console.log('ТИК');
+	}else{
+		if(count3dImage == 0){ 
+			count3dImage = (240);
+		}
+		count3dImage = count3dImage - 1;
+		container3DRotation.style.backgroundImage = 'url(img/model3drotate/' + chairColor + count3dImage + '.png)';
+		console.log('ТИК');
 	}
-	count3dImage = count3dImage + 1;
-	container3DRotation.style.backgroundImage = 'url(img/model3drotate/b/chairB' + count3dImage + '.png)';
 }
+	
 
 function playCount3dImage(){
-	playStatusCount3dImage = true;
-	let setInterval3DRotation = setInterval(image3DRotationPlay, 30);
+	playStatusCount3dImage = true; // МОЖНО УДАЛИТЬ
+	direction3DRotation = this.id;
+	setInterval3DRotation = setInterval(image3DRotationPlay, 30);
+
 	
 }
+function stopCount3dImage(){
+	clearInterval(setInterval3DRotation);
+	console.log('stop');
+}
 
-moveArrow__left.addEventListener("mousedown", playCount3dImage);
 
+// вращаем 3д модель перетаскиванием
+let moveStatusCount3dImage = false; //создали переменную для хранения состояния перетаскивания
+let model3DCoords;
+container3DRotation.addEventListener('mousemove', coordsSearch);
+let arrImage3DRotationMove = [0, 0];
+function coordsSearch(event){
+	
+	
+	if(moveStatusCount3dImage == true){
+		x = event.pageX;
+		arrImage3DRotationMove.unshift(x);
+		arrImage3DRotationMove.pop();
+		console.log(arrImage3DRotationMove);
+		let one = arrImage3DRotationMove[0];
+		let two = arrImage3DRotationMove[1];
+		if(one > two){
+			if(count3dImage == 0){ 
+				count3dImage = (240);
+			}
+			count3dImage = count3dImage - 1;
+			container3DRotation.style.backgroundImage = 'url(img/model3drotate/' + chairColor + count3dImage + '.png)';
+		}else{
+			if(count3dImage == 239){ 
+				count3dImage = (-1);
+			}
+			count3dImage = count3dImage + 1;
+			container3DRotation.style.backgroundImage = 'url(img/model3drotate/' + chairColor + count3dImage + '.png)';
+		}
+
+	
+
+	}
+}
+container3DRotation.addEventListener('mousedown', image3DRotationMoveStart);
+function image3DRotationMoveStart(){
+
+	moveStatusCount3dImage = true;
+}
+container3DRotation.addEventListener('mouseup', image3DRotationMoveStop);
+function image3DRotationMoveStop(){
+	moveStatusCount3dImage = false;
+}
+
+container3DRotation.addEventListener('mouseout', image3DRotationMoveStop);
 /* Вращение 3д модели END */
 
 
@@ -349,7 +452,7 @@ moveArrow__left.addEventListener("mousedown", playCount3dImage);
 
 window.addEventListener('scroll', model3dMove);
 function model3dMove(){
-	console.log(window.pageYOffset);
+	//console.log(window.pageYOffset);
 };
 
 /* Проигрывание 3д модели END */
